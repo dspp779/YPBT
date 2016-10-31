@@ -24,6 +24,9 @@ describe 'Video specifications' do
     it 'should be able to get a new api key with ENV credentials' do
       YoutubeVideo::YtApi.api_key.length.must_be :>, 0
     end
+    it 'should be able to get a new access token with file credentials' do
+      YoutubeVideo::YtApi.config = { api_key: ENV['YOUTUBE_API_KEY'] }
+    end
   end
 
   it 'should be able to open a video' do
