@@ -14,9 +14,6 @@ describe 'Video specifications' do
 
   before do
     VCR.insert_cassette CASSETTE_FILE, record: :new_episodes
-    #  @youtube_api = YoutubeVideo::YtApi.new(
-    #    api_key: ENV['YOUTUBE_API_KEY']
-    #  )
   end
 
   after do
