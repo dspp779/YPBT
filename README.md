@@ -30,3 +30,18 @@ Now, try to extract data from YouTube's video
 ```
     $ YPBT [video_id]
 ```
+## Usage
+```ruby
+video = YoutubeVideo::Video.find(
+  video_id: video_id
+)
+
+puts video.title
+
+video.commentthreads.each. do |comment|
+  puts comment.author.author_name
+  puts comment.text_display
+  puts comment.author.like_count if comment.author.like_count
+  puts "AuthorChannelUrl: #{comment.author.author_channel_url}"
+end
+```
