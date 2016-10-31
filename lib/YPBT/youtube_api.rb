@@ -16,6 +16,15 @@ module YoutubeVideo
       @api_key = ENV['YOUTUBE_API_KEY']
     end
 
+    def self.config=(credentials)
+      @config ? @config.update(credentials) : @config = credentials
+    end
+
+    def self.config
+      return @config if @config
+      @config = { api_key:     ENV['YOUTUBE_API_KEY'] }
+    end
+    
     def self.video_info(video_id)
       field = 'items(id,snippet(channelId,description,publishedAt,title))'
       video_response = HTTP.get(yt_resource_url('videos'),
