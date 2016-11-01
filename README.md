@@ -42,6 +42,6 @@ video.commentthreads.each. do |comment|
   puts comment.author.author_name
   puts comment.text_display
   puts comment.author.like_count if comment.author.like_count
-  puts "AuthorChannelUrl: #{comment.author.author_channel_url}"
+  puts comment.author.author_channel_url
 end
 ```
