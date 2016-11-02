@@ -72,7 +72,7 @@ describe 'Video specifications' do
   end
 
   it 'should run the executable file' do
-    output = YoutubeVideo::Runner.run!([ENV['YT_VIDEO_ID']])
+    output = `YPBT #{TEST_VIDEO_ID}`
     output.split("\n").length.must_be :>, 5
   end
 end
