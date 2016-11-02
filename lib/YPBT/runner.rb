@@ -33,8 +33,8 @@ module YoutubeVideo
         text_display_output(comment.text_display) + "\n",
         'LIKE: ' + like_count_output(comment.author.like_count) + "\n",
         'AuthorChannelUrl: ' + \
-         author_channel_url_output(comment.author.author_channel_url),
-          "\n\n"
+          author_channel_url_output(comment.author.author_channel_url),
+        "\n\n"
       ].join
     end
 
