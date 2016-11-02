@@ -1,0 +1,1026 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://www.googleapis.com/youtube/v3/comments?id=z13ryv5pynjvtfgst23iy5uxhsrkvzzfz&key=<API_KEY>&part=snippet
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - www.googleapis.com
+      User-Agent:
+      - http.rb/2.0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Expires:
+      - Wed, 02 Nov 2016 03:00:03 GMT
+      Date:
+      - Wed, 02 Nov 2016 03:00:03 GMT
+      Cache-Control:
+      - private, max-age=0, must-revalidate, no-transform
+      Etag:
+      - '"sZ5p5Mo8dPpfIzLYQBF8QIQJym0/qeBiXzwrS6i_SuXwVQOY4ZkW4o4"'
+      Vary:
+      - Origin
+      - X-Origin
+      Content-Type:
+      - application/json; charset=UTF-8
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      Content-Length:
+      - '871'
+      Server:
+      - GSE
+      Alt-Svc:
+      - quic=":443"; ma=2592000; v="36,35,34"
+      Connection:
+      - close
+    body:
+      encoding: UTF-8
+      string: |
+        {
+         "kind": "youtube#commentListResponse",
+         "etag": "\"sZ5p5Mo8dPpfIzLYQBF8QIQJym0/qeBiXzwrS6i_SuXwVQOY4ZkW4o4\"",
+         "items": [
+          {
+           "kind": "youtube#comment",
+           "etag": "\"sZ5p5Mo8dPpfIzLYQBF8QIQJym0/71aCrHudnqoJbPiRhOTyHKhiOiU\"",
+           "id": "z13ryv5pynjvtfgst23iy5uxhsrkvzzfz",
+           "snippet": {
+            "authorDisplayName": "leevihermanni",
+            "authorProfileImageUrl": "https://lh4.googleusercontent.com/-bzwXkvW61w8/AAAAAAAAAAI/AAAAAAAAAE4/G9k7waSjzVg/photo.jpg?sz=50",
+            "authorChannelUrl": "http://www.youtube.com/channel/UC8DJocIvsARy4NCaO3Pl1ZA",
+            "authorChannelId": {
+             "value": "UC8DJocIvsARy4NCaO3Pl1ZA"
+            },
+            "textDisplay": "go to watch my trump vs clinton rap battle\ufeff",
+            "canRate": false,
+            "viewerRating": "none",
+            "likeCount": 1,
+            "publishedAt": "2016-10-25T11:35:25.000Z",
+            "updatedAt": "2016-10-25T11:35:25.000Z"
+           }
+          }
+         ]
+        }
+    http_version: 
+  recorded_at: Wed, 02 Nov 2016 03:00:03 GMT
+- request:
+    method: get
+    uri: https://www.googleapis.com/youtube/v3/comments?fields=items(snippet(authorChannelId,authorChannelUrl,authorDisplayName,authorProfileImageUrl,likeCount))&id=z13ryv5pynjvtfgst23iy5uxhsrkvzzfz&key=<API_KEY>&part=snippet
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - www.googleapis.com
+      User-Agent:
+      - http.rb/2.0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Expires:
+      - Wed, 02 Nov 2016 03:00:04 GMT
+      Date:
+      - Wed, 02 Nov 2016 03:00:04 GMT
+      Cache-Control:
+      - private, max-age=0, must-revalidate, no-transform
+      Etag:
+      - '"sZ5p5Mo8dPpfIzLYQBF8QIQJym0/qeBiXzwrS6i_SuXwVQOY4ZkW4o4"'
+      Vary:
+      - Origin
+      - X-Origin
+      Content-Type:
+      - application/json; charset=UTF-8
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      Content-Length:
+      - '396'
+      Server:
+      - GSE
+      Alt-Svc:
+      - quic=":443"; ma=2592000; v="36,35,34"
+      Connection:
+      - close
+    body:
+      encoding: UTF-8
+      string: |
+        {
+         "items": [
+          {
+           "snippet": {
+            "authorDisplayName": "leevihermanni",
+            "authorProfileImageUrl": "https://lh4.googleusercontent.com/-bzwXkvW61w8/AAAAAAAAAAI/AAAAAAAAAE4/G9k7waSjzVg/photo.jpg?sz=50",
+            "authorChannelUrl": "http://www.youtube.com/channel/UC8DJocIvsARy4NCaO3Pl1ZA",
+            "authorChannelId": {
+             "value": "UC8DJocIvsARy4NCaO3Pl1ZA"
+            },
+            "likeCount": 1
+           }
+          }
+         ]
+        }
+    http_version: 
+  recorded_at: Wed, 02 Nov 2016 03:00:04 GMT
+- request:
+    method: get
+    uri: https://www.googleapis.com/youtube/v3/videos?fields=items(id,snippet(channelId,description,publishedAt,title))&id=FugHj7MGhss&key=<API_KEY>&part=snippet
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - www.googleapis.com
+      User-Agent:
+      - http.rb/2.0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Expires:
+      - Wed, 02 Nov 2016 03:00:05 GMT
+      Date:
+      - Wed, 02 Nov 2016 03:00:05 GMT
+      Cache-Control:
+      - private, max-age=300, must-revalidate, no-transform
+      Etag:
+      - '"sZ5p5Mo8dPpfIzLYQBF8QIQJym0/uO7zKX4AINOdfrA4xh0URRsotHc"'
+      Vary:
+      - Origin
+      - X-Origin
+      Content-Type:
+      - application/json; charset=UTF-8
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      Content-Length:
+      - '410'
+      Server:
+      - GSE
+      Alt-Svc:
+      - quic=":443"; ma=2592000; v="36,35,34"
+      Connection:
+      - close
+    body:
+      encoding: UTF-8
+      string: |
+        {
+         "items": [
+          {
+           "id": "FugHj7MGhss",
+           "snippet": {
+            "publishedAt": "2015-03-04T11:40:17.000Z",
+            "channelId": "UC-pR7CuFeaa-khgLx65j7CA",
+            "title": "20150303 二珂 後來 印地安老斑鳩 後會無期 淡水河邊 野薔薇 致青春 匆匆那年 我的滑板鞋",
+            "description": "新浪微博周二珂:http://weibo.com/u/1910672761\n二珂直播:http://www.panda.tv/35723"
+           }
+          }
+         ]
+        }
+    http_version: 
+  recorded_at: Wed, 02 Nov 2016 03:00:05 GMT
+- request:
+    method: get
+    uri: https://www.googleapis.com/youtube/v3/commentThreads?key=<API_KEY>&order=relevance&part=snippet&videoId=FugHj7MGhss
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - www.googleapis.com
+      User-Agent:
+      - http.rb/2.0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Expires:
+      - Wed, 02 Nov 2016 03:00:06 GMT
+      Date:
+      - Wed, 02 Nov 2016 03:00:06 GMT
+      Cache-Control:
+      - private, max-age=0, must-revalidate, no-transform
+      Etag:
+      - '"sZ5p5Mo8dPpfIzLYQBF8QIQJym0/23ckZNbfO0MO6p0lsmMsFaebvpc"'
+      Vary:
+      - Origin
+      - X-Origin
+      Content-Type:
+      - application/json; charset=UTF-8
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      Content-Length:
+      - '22732'
+      Server:
+      - GSE
+      Alt-Svc:
+      - quic=":443"; ma=2592000; v="36,35,34"
+      Connection:
+      - close
+    body:
+      encoding: UTF-8
+      string: "{\n \"kind\": \"youtube#commentThreadListResponse\",\n \"etag\": \"\\\"sZ5p5Mo8dPpfIzLYQBF8QIQJym0/23ckZNbfO0MO6p0lsmMsFaebvpc\\\"\",\n
+        \"nextPageToken\": \"Cg0QvsqAm4qJ0AIgACgBEtYBCAAQ2KS8jbT_zwIqyAHqh_GUpM7SnM4BmrKL-sKRv_nOAcey5qDCl9PNzgHL9cnHle2d880Bq9eEl-3C-tDPAceWxMHm8N2pzAHEw8jlqa_qlc0Buaj14uPkgJzPAaKu4dqrnIK3zAG-wYSx5PuGrs8B8cims6H2lozMAeiO47n3xtKszAGh45nkm-W2iswB2fWUht3Z_4DMAdDLre6hkY3DzQGjiq-E94LwwcwB8-2K67GIx6_PAfGirZ_u7O3CzwG416784frOwM0B54rsiPStmuzPARgBIBQox4vR7oqsysuqAQ==\",\n
+        \"pageInfo\": {\n  \"totalResults\": 20,\n  \"resultsPerPage\": 20\n },\n
+        \"items\": [\n  {\n   \"kind\": \"youtube#commentThread\",\n   \"etag\": \"\\\"sZ5p5Mo8dPpfIzLYQBF8QIQJym0/0hy8FFDAbrNA7T1QwM45-X-U0Gg\\\"\",\n
+        \  \"id\": \"z12lzhlxtqrjsvaoi04cgp5gak3nslahggg\",\n   \"snippet\": {\n    \"videoId\":
+        \"FugHj7MGhss\",\n    \"topLevelComment\": {\n     \"kind\": \"youtube#comment\",\n
+        \    \"etag\": \"\\\"sZ5p5Mo8dPpfIzLYQBF8QIQJym0/73aSwgQkqceD-TUrV1sIqn22nek\\\"\",\n
+        \    \"id\": \"z12lzhlxtqrjsvaoi04cgp5gak3nslahggg\",\n     \"snippet\": {\n
+        \     \"authorDisplayName\": \"麥克喬登\",\n      \"authorProfileImageUrl\": \"https://lh3.googleusercontent.com/-XdUIqdMkCWA/AAAAAAAAAAI/AAAAAAAAAAA/4252rscbv5M/photo.jpg?sz=50\",\n
+        \     \"authorChannelUrl\": \"http://www.youtube.com/channel/UC_tucEOjvnsxxijwQZokN-Q\",\n
+        \     \"authorChannelId\": {\n       \"value\": \"UC_tucEOjvnsxxijwQZokN-Q\"\n
+        \     },\n      \"videoId\": \"FugHj7MGhss\",\n      \"textDisplay\": \"大陸14億
+        高手在民間 臥虎又藏龍\\ufeff\",\n      \"canRate\": false,\n      \"viewerRating\":
+        \"none\",\n      \"likeCount\": 0,\n      \"publishedAt\": \"2016-10-29T06:40:54.000Z\",\n
+        \     \"updatedAt\": \"2016-10-29T06:40:54.000Z\"\n     }\n    },\n    \"canReply\":
+        false,\n    \"totalReplyCount\": 0,\n    \"isPublic\": true\n   }\n  },\n
+        \ {\n   \"kind\": \"youtube#commentThread\",\n   \"etag\": \"\\\"sZ5p5Mo8dPpfIzLYQBF8QIQJym0/vqanG0iSTFYTAJUWzKDGc9c912k\\\"\",\n
+        \  \"id\": \"z13ojzc4syf4txi1223be3fruxzjhj0zy04\",\n   \"snippet\": {\n    \"videoId\":
+        \"FugHj7MGhss\",\n    \"topLevelComment\": {\n     \"kind\": \"youtube#comment\",\n
+        \    \"etag\": \"\\\"sZ5p5Mo8dPpfIzLYQBF8QIQJym0/JTGe4ymHDmPu-XG6UnK_Mn4-nN0\\\"\",\n
+        \    \"id\": \"z13ojzc4syf4txi1223be3fruxzjhj0zy04\",\n     \"snippet\": {\n
+        \     \"authorDisplayName\": \"yidong zhang\",\n      \"authorProfileImageUrl\":
+        \"https://lh3.googleusercontent.com/-XdUIqdMkCWA/AAAAAAAAAAI/AAAAAAAAAAA/4252rscbv5M/photo.jpg?sz=50\",\n
+        \     \"authorChannelUrl\": \"http://www.youtube.com/channel/UChFO1JT3gMeEpU3JRP7wd5w\",\n
+        \     \"authorChannelId\": {\n       \"value\": \"UChFO1JT3gMeEpU3JRP7wd5w\"\n
+        \     },\n      \"videoId\": \"FugHj7MGhss\",\n      \"textDisplay\": \"。。。。。。。。\\ufeff\",\n
+        \     \"canRate\": false,\n      \"viewerRating\": \"none\",\n      \"likeCount\":
+        0,\n      \"publishedAt\": \"2016-10-27T18:55:12.000Z\",\n      \"updatedAt\":
+        \"2016-10-27T18:55:12.000Z\"\n     }\n    },\n    \"canReply\": false,\n    \"totalReplyCount\":
+        0,\n    \"isPublic\": true\n   }\n  },\n  {\n   \"kind\": \"youtube#commentThread\",\n
+        \  \"etag\": \"\\\"sZ5p5Mo8dPpfIzLYQBF8QIQJym0/llFuV14l9Bwiq2jlg0qzV8Ey7Fc\\\"\",\n
+        \  \"id\": \"z122xfko2suxyh2lq22vip3a0qqyh5tkl\",\n   \"snippet\": {\n    \"videoId\":
+        \"FugHj7MGhss\",\n    \"topLevelComment\": {\n     \"kind\": \"youtube#comment\",\n
+        \    \"etag\": \"\\\"sZ5p5Mo8dPpfIzLYQBF8QIQJym0/L6tc-Taa9o4RmVeoOe91gjP6X6k\\\"\",\n
+        \    \"id\": \"z122xfko2suxyh2lq22vip3a0qqyh5tkl\",\n     \"snippet\": {\n
+        \     \"authorDisplayName\": \"ang pang chuan\",\n      \"authorProfileImageUrl\":
+        \"https://lh5.googleusercontent.com/-cPzTvMOGlII/AAAAAAAAAAI/AAAAAAAAAFI/k8rNOOBGrXs/photo.jpg?sz=50\",\n
+        \     \"authorChannelUrl\": \"http://www.youtube.com/channel/UCmlO7mWtl9-GuqOoSjfPlvQ\",\n
+        \     \"authorChannelId\": {\n       \"value\": \"UCmlO7mWtl9-GuqOoSjfPlvQ\"\n
+        \     },\n      \"videoId\": \"FugHj7MGhss\",\n      \"textDisplay\": \"印地安老斑鳩唱得真的比原唱还好..几乎完美!\\ufeff\",\n
+        \     \"canRate\": false,\n      \"viewerRating\": \"none\",\n      \"likeCount\":
+        0,\n      \"publishedAt\": \"2016-10-25T06:37:30.000Z\",\n      \"updatedAt\":
+        \"2016-10-25T06:37:30.000Z\"\n     }\n    },\n    \"canReply\": false,\n    \"totalReplyCount\":
+        0,\n    \"isPublic\": true\n   }\n  },\n  {\n   \"kind\": \"youtube#commentThread\",\n
+        \  \"etag\": \"\\\"sZ5p5Mo8dPpfIzLYQBF8QIQJym0/TxU4N1zGymZ5ymncDUjmk_M66eA\\\"\",\n
+        \  \"id\": \"z12ecvb4qpeiub5yv04chh4oxtarglxjsow0k\",\n   \"snippet\": {\n
+        \   \"videoId\": \"FugHj7MGhss\",\n    \"topLevelComment\": {\n     \"kind\":
+        \"youtube#comment\",\n     \"etag\": \"\\\"sZ5p5Mo8dPpfIzLYQBF8QIQJym0/uvzFlBGHITqaPOfEHt6vTA9UKHo\\\"\",\n
+        \    \"id\": \"z12ecvb4qpeiub5yv04chh4oxtarglxjsow0k\",\n     \"snippet\":
+        {\n      \"authorDisplayName\": \"Ao Shizhong\",\n      \"authorProfileImageUrl\":
+        \"https://lh3.googleusercontent.com/-XdUIqdMkCWA/AAAAAAAAAAI/AAAAAAAAAAA/4252rscbv5M/photo.jpg?sz=50\",\n
+        \     \"authorChannelUrl\": \"http://www.youtube.com/channel/UCCpfCKOjTZ7pckMY8l3Gqyw\",\n
+        \     \"authorChannelId\": {\n       \"value\": \"UCCpfCKOjTZ7pckMY8l3Gqyw\"\n
+        \     },\n      \"videoId\": \"FugHj7MGhss\",\n      \"textDisplay\": \"666666666666666666666666666666\\ufeff\",\n
+        \     \"canRate\": false,\n      \"viewerRating\": \"none\",\n      \"likeCount\":
+        0,\n      \"publishedAt\": \"2016-09-30T22:27:23.000Z\",\n      \"updatedAt\":
+        \"2016-09-30T22:27:23.000Z\"\n     }\n    },\n    \"canReply\": false,\n    \"totalReplyCount\":
+        0,\n    \"isPublic\": true\n   }\n  },\n  {\n   \"kind\": \"youtube#commentThread\",\n
+        \  \"etag\": \"\\\"sZ5p5Mo8dPpfIzLYQBF8QIQJym0/ZJUBjJ6k_KhCi6NTEBzLMgvyrTs\\\"\",\n
+        \  \"id\": \"z12vjroh2qvpupjrz04chfwxikefy5jz3pk0k\",\n   \"snippet\": {\n
+        \   \"videoId\": \"FugHj7MGhss\",\n    \"topLevelComment\": {\n     \"kind\":
+        \"youtube#comment\",\n     \"etag\": \"\\\"sZ5p5Mo8dPpfIzLYQBF8QIQJym0/zXIqNdd9n6UjdeiLm09D9AZb2_4\\\"\",\n
+        \    \"id\": \"z12vjroh2qvpupjrz04chfwxikefy5jz3pk0k\",\n     \"snippet\":
+        {\n      \"authorDisplayName\": \"XL Hu\",\n      \"authorProfileImageUrl\":
+        \"https://lh3.googleusercontent.com/-XdUIqdMkCWA/AAAAAAAAAAI/AAAAAAAAAAA/4252rscbv5M/photo.jpg?sz=50\",\n
+        \     \"authorChannelUrl\": \"http://www.youtube.com/channel/UCV1BvJIaNGhtGwtBwivj7nw\",\n
+        \     \"authorChannelId\": {\n       \"value\": \"UCV1BvJIaNGhtGwtBwivj7nw\"\n
+        \     },\n      \"videoId\": \"FugHj7MGhss\",\n      \"textDisplay\": \"我还没听过这么好听的老斑鸠\\ufeff\",\n
+        \     \"canRate\": false,\n      \"viewerRating\": \"none\",\n      \"likeCount\":
+        4,\n      \"publishedAt\": \"2016-03-12T06:47:47.000Z\",\n      \"updatedAt\":
+        \"2016-03-12T06:47:47.000Z\"\n     }\n    },\n    \"canReply\": false,\n    \"totalReplyCount\":
+        0,\n    \"isPublic\": true\n   }\n  },\n  {\n   \"kind\": \"youtube#commentThread\",\n
+        \  \"etag\": \"\\\"sZ5p5Mo8dPpfIzLYQBF8QIQJym0/7Fhg8o6DkuYxz2CtVzLRdHYoKSk\\\"\",\n
+        \  \"id\": \"z12keh2guzjpsn2tw22gcnoo2vbxwhrl2\",\n   \"snippet\": {\n    \"videoId\":
+        \"FugHj7MGhss\",\n    \"topLevelComment\": {\n     \"kind\": \"youtube#comment\",\n
+        \    \"etag\": \"\\\"sZ5p5Mo8dPpfIzLYQBF8QIQJym0/Xm0TBMToxT9sjwu_8KxyX1Ac7Zw\\\"\",\n
+        \    \"id\": \"z12keh2guzjpsn2tw22gcnoo2vbxwhrl2\",\n     \"snippet\": {\n
+        \     \"authorDisplayName\": \"zhixing liu\",\n      \"authorProfileImageUrl\":
+        \"https://lh6.googleusercontent.com/-sXHNFbXAOio/AAAAAAAAAAI/AAAAAAAAAEY/W_fokWr_snw/photo.jpg?sz=50\",\n
+        \     \"authorChannelUrl\": \"http://www.youtube.com/channel/UCTOQD28aY_RJtRVZ8hxBkTw\",\n
+        \     \"authorChannelId\": {\n       \"value\": \"UCTOQD28aY_RJtRVZ8hxBkTw\"\n
+        \     },\n      \"videoId\": \"FugHj7MGhss\",\n      \"textDisplay\": \"印第安老斑鸠还是听惯了周杰伦的原版，不过我珂也很有特色！\\ufeff\",\n
+        \     \"canRate\": false,\n      \"viewerRating\": \"none\",\n      \"likeCount\":
+        0,\n      \"publishedAt\": \"2016-09-20T21:56:58.000Z\",\n      \"updatedAt\":
+        \"2016-09-20T21:56:58.000Z\"\n     }\n    },\n    \"canReply\": false,\n    \"totalReplyCount\":
+        0,\n    \"isPublic\": true\n   }\n  },\n  {\n   \"kind\": \"youtube#commentThread\",\n
+        \  \"etag\": \"\\\"sZ5p5Mo8dPpfIzLYQBF8QIQJym0/8UdnprfIdCraGg1oau4t2q2waQU\\\"\",\n
+        \  \"id\": \"z12zdhzzruzze3bwh04ciz2puzutirjgjto0k\",\n   \"snippet\": {\n
+        \   \"videoId\": \"FugHj7MGhss\",\n    \"topLevelComment\": {\n     \"kind\":
+        \"youtube#comment\",\n     \"etag\": \"\\\"sZ5p5Mo8dPpfIzLYQBF8QIQJym0/PgPFYJJCVJL8otRMWuBqwlR4r2A\\\"\",\n
+        \    \"id\": \"z12zdhzzruzze3bwh04ciz2puzutirjgjto0k\",\n     \"snippet\":
+        {\n      \"authorDisplayName\": \"黃挺哲\",\n      \"authorProfileImageUrl\":
+        \"https://lh3.googleusercontent.com/-XdUIqdMkCWA/AAAAAAAAAAI/AAAAAAAAAAA/4252rscbv5M/photo.jpg?sz=50\",\n
+        \     \"authorChannelUrl\": \"http://www.youtube.com/channel/UCD0nTdjQXJLXFek9sE8crug\",\n
+        \     \"authorChannelId\": {\n       \"value\": \"UCD0nTdjQXJLXFek9sE8crug\"\n
+        \     },\n      \"videoId\": \"FugHj7MGhss\",\n      \"textDisplay\": \"nice\\ufeff\",\n
+        \     \"canRate\": false,\n      \"viewerRating\": \"none\",\n      \"likeCount\":
+        0,\n      \"publishedAt\": \"2016-08-24T02:30:51.000Z\",\n      \"updatedAt\":
+        \"2016-08-24T02:30:51.000Z\"\n     }\n    },\n    \"canReply\": false,\n    \"totalReplyCount\":
+        0,\n    \"isPublic\": true\n   }\n  },\n  {\n   \"kind\": \"youtube#commentThread\",\n
+        \  \"etag\": \"\\\"sZ5p5Mo8dPpfIzLYQBF8QIQJym0/ZxGgFzhB0JkYNjxxcAIkE6IA_-8\\\"\",\n
+        \  \"id\": \"z13oj5gxfvuesnnvk22sjrh4npmjgt5e3\",\n   \"snippet\": {\n    \"videoId\":
+        \"FugHj7MGhss\",\n    \"topLevelComment\": {\n     \"kind\": \"youtube#comment\",\n
+        \    \"etag\": \"\\\"sZ5p5Mo8dPpfIzLYQBF8QIQJym0/lBDJPEZGXgfjwWqkOGPD8MGabZY\\\"\",\n
+        \    \"id\": \"z13oj5gxfvuesnnvk22sjrh4npmjgt5e3\",\n     \"snippet\": {\n
+        \     \"authorDisplayName\": \"Izayoi Sakamaki (Justin Xiao)\",\n      \"authorProfileImageUrl\":
+        \"https://lh6.googleusercontent.com/-0VMLKycIMyk/AAAAAAAAAAI/AAAAAAAAAPo/HSKoidbeBk8/photo.jpg?sz=50\",\n
+        \     \"authorChannelUrl\": \"http://www.youtube.com/channel/UCefeWYVoo3EpK0OpSkOBocg\",\n
+        \     \"authorChannelId\": {\n       \"value\": \"UCefeWYVoo3EpK0OpSkOBocg\"\n
+        \     },\n      \"videoId\": \"FugHj7MGhss\",\n      \"textDisplay\": \"You
+        have such a great voice.\\ufeff\",\n      \"canRate\": false,\n      \"viewerRating\":
+        \"none\",\n      \"likeCount\": 0,\n      \"publishedAt\": \"2016-05-26T03:19:44.000Z\",\n
+        \     \"updatedAt\": \"2016-05-26T03:19:44.000Z\"\n     }\n    },\n    \"canReply\":
+        false,\n    \"totalReplyCount\": 1,\n    \"isPublic\": true\n   }\n  },\n
+        \ {\n   \"kind\": \"youtube#commentThread\",\n   \"etag\": \"\\\"sZ5p5Mo8dPpfIzLYQBF8QIQJym0/oHRvMNmnm8Hl3v5y2Ra-leGYuvQ\\\"\",\n
+        \  \"id\": \"z13sszfqfoe1tp3gu04chtlh2niwc10acdc\",\n   \"snippet\": {\n    \"videoId\":
+        \"FugHj7MGhss\",\n    \"topLevelComment\": {\n     \"kind\": \"youtube#comment\",\n
+        \    \"etag\": \"\\\"sZ5p5Mo8dPpfIzLYQBF8QIQJym0/A4ld_f5cRYFLJ6o8BsxSopHGgFc\\\"\",\n
+        \    \"id\": \"z13sszfqfoe1tp3gu04chtlh2niwc10acdc\",\n     \"snippet\": {\n
+        \     \"authorDisplayName\": \"Shaoting Wang\",\n      \"authorProfileImageUrl\":
+        \"https://lh5.googleusercontent.com/-2Y3uSVPWoPM/AAAAAAAAAAI/AAAAAAAAABE/rmDz5D5EbWk/photo.jpg?sz=50\",\n
+        \     \"authorChannelUrl\": \"http://www.youtube.com/channel/UCuGfSn8tjwI-Jkx6Dy6w7kg\",\n
+        \     \"authorChannelId\": {\n       \"value\": \"UCuGfSn8tjwI-Jkx6Dy6w7kg\"\n
+        \     },\n      \"videoId\": \"FugHj7MGhss\",\n      \"textDisplay\": \"66666666666666666666666\\ufeff\",\n
+        \     \"canRate\": false,\n      \"viewerRating\": \"none\",\n      \"likeCount\":
+        1,\n      \"publishedAt\": \"2016-03-17T00:42:22.000Z\",\n      \"updatedAt\":
+        \"2016-03-17T00:42:22.000Z\"\n     }\n    },\n    \"canReply\": false,\n    \"totalReplyCount\":
+        0,\n    \"isPublic\": true\n   }\n  },\n  {\n   \"kind\": \"youtube#commentThread\",\n
+        \  \"etag\": \"\\\"sZ5p5Mo8dPpfIzLYQBF8QIQJym0/k4yO1iXLd-rVtewzhXWDEJ3yQSc\\\"\",\n
+        \  \"id\": \"z13shjfo5yiqjxauu22cxfqb4wbvy5ub104\",\n   \"snippet\": {\n    \"videoId\":
+        \"FugHj7MGhss\",\n    \"topLevelComment\": {\n     \"kind\": \"youtube#comment\",\n
+        \    \"etag\": \"\\\"sZ5p5Mo8dPpfIzLYQBF8QIQJym0/CQlJZmd2Fgmq5dZx4KOqVW2GvoU\\\"\",\n
+        \    \"id\": \"z13shjfo5yiqjxauu22cxfqb4wbvy5ub104\",\n     \"snippet\": {\n
+        \     \"authorDisplayName\": \"謝志鵬\",\n      \"authorProfileImageUrl\": \"https://lh5.googleusercontent.com/-FwxPTHJYxw4/AAAAAAAAAAI/AAAAAAAAABo/6PEhXzbP-Nc/photo.jpg?sz=50\",\n
+        \     \"authorChannelUrl\": \"http://www.youtube.com/channel/UC9DO4l7rGCeqtyf3bXGVOLQ\",\n
+        \     \"authorChannelId\": {\n       \"value\": \"UC9DO4l7rGCeqtyf3bXGVOLQ\"\n
+        \     },\n      \"videoId\": \"FugHj7MGhss\",\n      \"textDisplay\": \"超好聽的ㄟ\\ufeff\",\n
+        \     \"canRate\": false,\n      \"viewerRating\": \"none\",\n      \"likeCount\":
+        0,\n      \"publishedAt\": \"2016-08-02T05:42:46.000Z\",\n      \"updatedAt\":
+        \"2016-08-02T05:42:46.000Z\"\n     }\n    },\n    \"canReply\": false,\n    \"totalReplyCount\":
+        0,\n    \"isPublic\": true\n   }\n  },\n  {\n   \"kind\": \"youtube#commentThread\",\n
+        \  \"etag\": \"\\\"sZ5p5Mo8dPpfIzLYQBF8QIQJym0/y-yGBXBKEoaiCB1E0x08rmAwL30\\\"\",\n
+        \  \"id\": \"z12htl2qkqbzclrzb04ceh0jhqmgfxpxoa0\",\n   \"snippet\": {\n    \"videoId\":
+        \"FugHj7MGhss\",\n    \"topLevelComment\": {\n     \"kind\": \"youtube#comment\",\n
+        \    \"etag\": \"\\\"sZ5p5Mo8dPpfIzLYQBF8QIQJym0/8cIapVHtJV_bYFsI6wGVPArOPO8\\\"\",\n
+        \    \"id\": \"z12htl2qkqbzclrzb04ceh0jhqmgfxpxoa0\",\n     \"snippet\": {\n
+        \     \"authorDisplayName\": \"Independent123\",\n      \"authorProfileImageUrl\":
+        \"https://lh6.googleusercontent.com/-b8jdu21Beyw/AAAAAAAAAAI/AAAAAAAAABw/JN0AsrP_0F8/photo.jpg?sz=50\",\n
+        \     \"authorChannelUrl\": \"http://www.youtube.com/channel/UCpYpBt7ZRomZHaEDOj3lbig\",\n
+        \     \"authorChannelId\": {\n       \"value\": \"UCpYpBt7ZRomZHaEDOj3lbig\"\n
+        \     },\n      \"videoId\": \"FugHj7MGhss\",\n      \"textDisplay\": \"666666666666666666666666666\\ufeff\",\n
+        \     \"canRate\": false,\n      \"viewerRating\": \"none\",\n      \"likeCount\":
+        0,\n      \"publishedAt\": \"2016-04-18T04:01:15.000Z\",\n      \"updatedAt\":
+        \"2016-04-18T04:01:15.000Z\"\n     }\n    },\n    \"canReply\": false,\n    \"totalReplyCount\":
+        0,\n    \"isPublic\": true\n   }\n  },\n  {\n   \"kind\": \"youtube#commentThread\",\n
+        \  \"etag\": \"\\\"sZ5p5Mo8dPpfIzLYQBF8QIQJym0/162W2vKFLWn5OW47y6eZu0UreNI\\\"\",\n
+        \  \"id\": \"z131ivqwkxuvtle1x22rg3fztyetvfk2d\",\n   \"snippet\": {\n    \"videoId\":
+        \"FugHj7MGhss\",\n    \"topLevelComment\": {\n     \"kind\": \"youtube#comment\",\n
+        \    \"etag\": \"\\\"sZ5p5Mo8dPpfIzLYQBF8QIQJym0/On-1ZfBgsSbLBRY3OfNAI0FI2SU\\\"\",\n
+        \    \"id\": \"z131ivqwkxuvtle1x22rg3fztyetvfk2d\",\n     \"snippet\": {\n
+        \     \"authorDisplayName\": \"王笙翰\",\n      \"authorProfileImageUrl\": \"https://lh3.googleusercontent.com/-XdUIqdMkCWA/AAAAAAAAAAI/AAAAAAAAAAA/4252rscbv5M/photo.jpg?sz=50\",\n
+        \     \"authorChannelUrl\": \"http://www.youtube.com/channel/UCD7RhGQvzrJN3wXSI58iWew\",\n
+        \     \"authorChannelId\": {\n       \"value\": \"UCD7RhGQvzrJN3wXSI58iWew\"\n
+        \     },\n      \"videoId\": \"FugHj7MGhss\",\n      \"textDisplay\": \"\U0001F44D\U0001F44D\\ufeff\",\n
+        \     \"canRate\": false,\n      \"viewerRating\": \"none\",\n      \"likeCount\":
+        0,\n      \"publishedAt\": \"2016-08-01T03:54:30.000Z\",\n      \"updatedAt\":
+        \"2016-08-01T03:54:30.000Z\"\n     }\n    },\n    \"canReply\": false,\n    \"totalReplyCount\":
+        0,\n    \"isPublic\": true\n   }\n  },\n  {\n   \"kind\": \"youtube#commentThread\",\n
+        \  \"etag\": \"\\\"sZ5p5Mo8dPpfIzLYQBF8QIQJym0/bcCKnJIHI3TB3kk5hcqMn9GwalM\\\"\",\n
+        \  \"id\": \"z13fwjnh0tz0ifbfi22ahzq50pulcn4je04\",\n   \"snippet\": {\n    \"videoId\":
+        \"FugHj7MGhss\",\n    \"topLevelComment\": {\n     \"kind\": \"youtube#comment\",\n
+        \    \"etag\": \"\\\"sZ5p5Mo8dPpfIzLYQBF8QIQJym0/pqaklx8pnEF0a_EvikaFyvPQcm8\\\"\",\n
+        \    \"id\": \"z13fwjnh0tz0ifbfi22ahzq50pulcn4je04\",\n     \"snippet\": {\n
+        \     \"authorDisplayName\": \"Jianwen Zhang\",\n      \"authorProfileImageUrl\":
+        \"https://lh3.googleusercontent.com/-XdUIqdMkCWA/AAAAAAAAAAI/AAAAAAAAAAA/4252rscbv5M/photo.jpg?sz=50\",\n
+        \     \"authorChannelUrl\": \"http://www.youtube.com/channel/UCPy6kCHLLcnjpu9BjCMDesQ\",\n
+        \     \"authorChannelId\": {\n       \"value\": \"UCPy6kCHLLcnjpu9BjCMDesQ\"\n
+        \     },\n      \"videoId\": \"FugHj7MGhss\",\n      \"textDisplay\": \"五一，加班，打卡~\\ufeff\",\n
+        \     \"canRate\": false,\n      \"viewerRating\": \"none\",\n      \"likeCount\":
+        0,\n      \"publishedAt\": \"2016-05-01T12:24:11.000Z\",\n      \"updatedAt\":
+        \"2016-05-01T12:24:11.000Z\"\n     }\n    },\n    \"canReply\": false,\n    \"totalReplyCount\":
+        0,\n    \"isPublic\": true\n   }\n  },\n  {\n   \"kind\": \"youtube#commentThread\",\n
+        \  \"etag\": \"\\\"sZ5p5Mo8dPpfIzLYQBF8QIQJym0/Tr8zChcAdYZMAFadRyFUWSNwu6A\\\"\",\n
+        \  \"id\": \"z13jzh3obsymc1mh004ccvwqfmanxpyrpq00k\",\n   \"snippet\": {\n
+        \   \"videoId\": \"FugHj7MGhss\",\n    \"topLevelComment\": {\n     \"kind\":
+        \"youtube#comment\",\n     \"etag\": \"\\\"sZ5p5Mo8dPpfIzLYQBF8QIQJym0/rcasq2uAjaAZYorhynZEZFQwJV8\\\"\",\n
+        \    \"id\": \"z13jzh3obsymc1mh004ccvwqfmanxpyrpq00k\",\n     \"snippet\":
+        {\n      \"authorDisplayName\": \"Johnny jai\",\n      \"authorProfileImageUrl\":
+        \"https://lh3.googleusercontent.com/-CuwfaxmRZ40/AAAAAAAAAAI/AAAAAAAAAEM/TZOYcE_pB1s/photo.jpg?sz=50\",\n
+        \     \"authorChannelUrl\": \"http://www.youtube.com/channel/UCzilSk_VjaLEJOmSpg6kKkw\",\n
+        \     \"authorChannelId\": {\n       \"value\": \"UCzilSk_VjaLEJOmSpg6kKkw\"\n
+        \     },\n      \"videoId\": \"FugHj7MGhss\",\n      \"textDisplay\": \"这首歌我也会唱！！！\\u003cbr
+        /\\u003e\\u003cbr /\\u003e這首歌我也會唱！！！\\ufeff\",\n      \"canRate\": false,\n
+        \     \"viewerRating\": \"none\",\n      \"likeCount\": 0,\n      \"publishedAt\":
+        \"2016-09-05T17:21:03.000Z\",\n      \"updatedAt\": \"2016-09-05T17:21:03.000Z\"\n
+        \    }\n    },\n    \"canReply\": false,\n    \"totalReplyCount\": 0,\n    \"isPublic\":
+        true\n   }\n  },\n  {\n   \"kind\": \"youtube#commentThread\",\n   \"etag\":
+        \"\\\"sZ5p5Mo8dPpfIzLYQBF8QIQJym0/i96p48wUoWVldA5EpnJK_IxZ8vY\\\"\",\n   \"id\":
+        \"z123zx1g1pfycne0k22hjjiwwozyvdzs5\",\n   \"snippet\": {\n    \"videoId\":
+        \"FugHj7MGhss\",\n    \"topLevelComment\": {\n     \"kind\": \"youtube#comment\",\n
+        \    \"etag\": \"\\\"sZ5p5Mo8dPpfIzLYQBF8QIQJym0/ZC9GMOfeS5xkKkQGqbxn2LRT7lw\\\"\",\n
+        \    \"id\": \"z123zx1g1pfycne0k22hjjiwwozyvdzs5\",\n     \"snippet\": {\n
+        \     \"authorDisplayName\": \"田云龙\",\n      \"authorProfileImageUrl\": \"https://lh3.googleusercontent.com/-XdUIqdMkCWA/AAAAAAAAAAI/AAAAAAAAAAA/4252rscbv5M/photo.jpg?sz=50\",\n
+        \     \"authorChannelUrl\": \"http://www.youtube.com/channel/UCjLVMTiIpz2s6VWkrcQLkVQ\",\n
+        \     \"authorChannelId\": {\n       \"value\": \"UCjLVMTiIpz2s6VWkrcQLkVQ\"\n
+        \     },\n      \"videoId\": \"FugHj7MGhss\",\n      \"textDisplay\": \"唱歌不错哦！\\ufeff\",\n
+        \     \"canRate\": false,\n      \"viewerRating\": \"none\",\n      \"likeCount\":
+        0,\n      \"publishedAt\": \"2016-08-10T04:51:55.000Z\",\n      \"updatedAt\":
+        \"2016-08-10T04:51:55.000Z\"\n     }\n    },\n    \"canReply\": false,\n    \"totalReplyCount\":
+        0,\n    \"isPublic\": true\n   }\n  },\n  {\n   \"kind\": \"youtube#commentThread\",\n
+        \  \"etag\": \"\\\"sZ5p5Mo8dPpfIzLYQBF8QIQJym0/WSHAHYfeQvMpCUzWoWsWQxChMPs\\\"\",\n
+        \  \"id\": \"z13oyrjj3xmhtryoh04cjdsanyu2f1k553s\",\n   \"snippet\": {\n    \"videoId\":
+        \"FugHj7MGhss\",\n    \"topLevelComment\": {\n     \"kind\": \"youtube#comment\",\n
+        \    \"etag\": \"\\\"sZ5p5Mo8dPpfIzLYQBF8QIQJym0/XvYM1lFStWxRJ-Lgpc2Lapllhuc\\\"\",\n
+        \    \"id\": \"z13oyrjj3xmhtryoh04cjdsanyu2f1k553s\",\n     \"snippet\": {\n
+        \     \"authorDisplayName\": \"never say\",\n      \"authorProfileImageUrl\":
+        \"https://lh3.googleusercontent.com/-XdUIqdMkCWA/AAAAAAAAAAI/AAAAAAAAAAA/4252rscbv5M/photo.jpg?sz=50\",\n
+        \     \"authorChannelUrl\": \"http://www.youtube.com/channel/UCaxHIyI4eekNR7JkRXw4gng\",\n
+        \     \"authorChannelId\": {\n       \"value\": \"UCaxHIyI4eekNR7JkRXw4gng\"\n
+        \     },\n      \"videoId\": \"FugHj7MGhss\",\n      \"textDisplay\": \"翻墙很容易的，只需点一下就好了\\ufeff\",\n
+        \     \"canRate\": false,\n      \"viewerRating\": \"none\",\n      \"likeCount\":
+        0,\n      \"publishedAt\": \"2015-12-30T03:13:52.000Z\",\n      \"updatedAt\":
+        \"2015-12-30T03:13:52.000Z\"\n     }\n    },\n    \"canReply\": false,\n    \"totalReplyCount\":
+        0,\n    \"isPublic\": true\n   }\n  },\n  {\n   \"kind\": \"youtube#commentThread\",\n
+        \  \"etag\": \"\\\"sZ5p5Mo8dPpfIzLYQBF8QIQJym0/D1p0v79FYL0_-jM937XCtPIbKg4\\\"\",\n
+        \  \"id\": \"z13tg3jpkrrhdpvnf22jvfijikzmgvv5k04\",\n   \"snippet\": {\n    \"videoId\":
+        \"FugHj7MGhss\",\n    \"topLevelComment\": {\n     \"kind\": \"youtube#comment\",\n
+        \    \"etag\": \"\\\"sZ5p5Mo8dPpfIzLYQBF8QIQJym0/0t39um8IcYfTt30MGx1WgK4rCRE\\\"\",\n
+        \    \"id\": \"z13tg3jpkrrhdpvnf22jvfijikzmgvv5k04\",\n     \"snippet\": {\n
+        \     \"authorDisplayName\": \"Jian Jin\",\n      \"authorProfileImageUrl\":
+        \"https://lh3.googleusercontent.com/-D4NgeTNp59w/AAAAAAAAAAI/AAAAAAAAGg8/Tf-EyLL33hk/photo.jpg?sz=50\",\n
+        \     \"authorChannelUrl\": \"http://www.youtube.com/channel/UCbnrh7OTF2SdnoaWGN-37WA\",\n
+        \     \"authorChannelId\": {\n       \"value\": \"UCbnrh7OTF2SdnoaWGN-37WA\"\n
+        \     },\n      \"videoId\": \"FugHj7MGhss\",\n      \"textDisplay\": \"6666666666666666666666666666\\ufeff\",\n
+        \     \"canRate\": false,\n      \"viewerRating\": \"none\",\n      \"likeCount\":
+        0,\n      \"publishedAt\": \"2015-11-22T15:19:50.000Z\",\n      \"updatedAt\":
+        \"2015-11-22T15:19:50.000Z\"\n     }\n    },\n    \"canReply\": false,\n    \"totalReplyCount\":
+        0,\n    \"isPublic\": true\n   }\n  },\n  {\n   \"kind\": \"youtube#commentThread\",\n
+        \  \"etag\": \"\\\"sZ5p5Mo8dPpfIzLYQBF8QIQJym0/rcW3qUGUTRAks10_lXc7yosGKXA\\\"\",\n
+        \  \"id\": \"z13uf5tpexvbfzqzh04chnxphyrgxj0ofr40k\",\n   \"snippet\": {\n
+        \   \"videoId\": \"FugHj7MGhss\",\n    \"topLevelComment\": {\n     \"kind\":
+        \"youtube#comment\",\n     \"etag\": \"\\\"sZ5p5Mo8dPpfIzLYQBF8QIQJym0/tEVnslCKdnRCTDVUXUwyBqZtmG8\\\"\",\n
+        \    \"id\": \"z13uf5tpexvbfzqzh04chnxphyrgxj0ofr40k\",\n     \"snippet\":
+        {\n      \"authorDisplayName\": \"Dota2信長重製\",\n      \"authorProfileImageUrl\":
+        \"https://lh5.googleusercontent.com/-JxFRNnMV7Lo/AAAAAAAAAAI/AAAAAAAAF3c/DEGnn6nW14w/photo.jpg?sz=50\",\n
+        \     \"authorChannelUrl\": \"http://www.youtube.com/channel/UCXMGBAuIqrMz4bhvp6zMCag\",\n
+        \     \"authorChannelId\": {\n       \"value\": \"UCXMGBAuIqrMz4bhvp6zMCag\"\n
+        \     },\n      \"videoId\": \"FugHj7MGhss\",\n      \"textDisplay\": \"LOVE~\\ufeff\",\n
+        \     \"canRate\": false,\n      \"viewerRating\": \"none\",\n      \"likeCount\":
+        0,\n      \"publishedAt\": \"2015-12-26T09:50:27.000Z\",\n      \"updatedAt\":
+        \"2015-12-26T09:50:27.000Z\"\n     }\n    },\n    \"canReply\": false,\n    \"totalReplyCount\":
+        0,\n    \"isPublic\": true\n   }\n  },\n  {\n   \"kind\": \"youtube#commentThread\",\n
+        \  \"etag\": \"\\\"sZ5p5Mo8dPpfIzLYQBF8QIQJym0/tGMpXVOvr9Nn5hUv7O1NrdE9PEU\\\"\",\n
+        \  \"id\": \"z132ilfpuwiyijobv04cdntidmqlevbpmls0k\",\n   \"snippet\": {\n
+        \   \"videoId\": \"FugHj7MGhss\",\n    \"topLevelComment\": {\n     \"kind\":
+        \"youtube#comment\",\n     \"etag\": \"\\\"sZ5p5Mo8dPpfIzLYQBF8QIQJym0/bxdfJcs3aWibb0djOEgWX-lwqk0\\\"\",\n
+        \    \"id\": \"z132ilfpuwiyijobv04cdntidmqlevbpmls0k\",\n     \"snippet\":
+        {\n      \"authorDisplayName\": \"LaiHoWong\",\n      \"authorProfileImageUrl\":
+        \"https://lh3.googleusercontent.com/-1lZ_HVofI38/AAAAAAAAAAI/AAAAAAAAABk/GE_8NOgYp7g/photo.jpg?sz=50\",\n
+        \     \"authorChannelUrl\": \"http://www.youtube.com/channel/UCzHDRCJMkkMrzPDFzbi7FxA\",\n
+        \     \"authorChannelId\": {\n       \"value\": \"UCzHDRCJMkkMrzPDFzbi7FxA\"\n
+        \     },\n      \"videoId\": \"FugHj7MGhss\",\n      \"textDisplay\": \"超级好听\\ufeff\",\n
+        \     \"canRate\": false,\n      \"viewerRating\": \"none\",\n      \"likeCount\":
+        0,\n      \"publishedAt\": \"2016-01-07T22:17:11.000Z\",\n      \"updatedAt\":
+        \"2016-01-07T22:17:11.000Z\"\n     }\n    },\n    \"canReply\": false,\n    \"totalReplyCount\":
+        0,\n    \"isPublic\": true\n   }\n  },\n  {\n   \"kind\": \"youtube#commentThread\",\n
+        \  \"etag\": \"\\\"sZ5p5Mo8dPpfIzLYQBF8QIQJym0/jGLM-1pxp8y15S5pdmMkLxKQadg\\\"\",\n
+        \  \"id\": \"z12zx3ba4ziotlc5q04cgvlz0lbvhvr4ono0k\",\n   \"snippet\": {\n
+        \   \"videoId\": \"FugHj7MGhss\",\n    \"topLevelComment\": {\n     \"kind\":
+        \"youtube#comment\",\n     \"etag\": \"\\\"sZ5p5Mo8dPpfIzLYQBF8QIQJym0/PfltCfrE0j57Lzph0nMxTs_cZYc\\\"\",\n
+        \    \"id\": \"z12zx3ba4ziotlc5q04cgvlz0lbvhvr4ono0k\",\n     \"snippet\":
+        {\n      \"authorDisplayName\": \",李勇樟\",\n      \"authorProfileImageUrl\":
+        \"https://lh4.googleusercontent.com/-BaDLsfzr14Y/AAAAAAAAAAI/AAAAAAAAACw/ASGueTH0_20/photo.jpg?sz=50\",\n
+        \     \"authorChannelUrl\": \"http://www.youtube.com/channel/UCp-qAezI6Stkuqj4IdVeMdA\",\n
+        \     \"authorChannelId\": {\n       \"value\": \"UCp-qAezI6Stkuqj4IdVeMdA\"\n
+        \     },\n      \"videoId\": \"FugHj7MGhss\",\n      \"textDisplay\": \"這是甚麼撥放軟體呀\\ufeff\",\n
+        \     \"canRate\": false,\n      \"viewerRating\": \"none\",\n      \"likeCount\":
+        0,\n      \"publishedAt\": \"2015-08-25T13:35:37.000Z\",\n      \"updatedAt\":
+        \"2015-08-25T13:35:37.000Z\"\n     }\n    },\n    \"canReply\": false,\n    \"totalReplyCount\":
+        2,\n    \"isPublic\": true\n   }\n  }\n ]\n}\n"
+    http_version: 
+  recorded_at: Wed, 02 Nov 2016 03:00:07 GMT
+- request:
+    method: get
+    uri: https://www.googleapis.com/youtube/v3/videos?fields=items(id,snippet(channelId,description,publishedAt,title))&id=4-kTfNZTGiA&key=<API_KEY>&part=snippet
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - www.googleapis.com
+      User-Agent:
+      - http.rb/2.0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Expires:
+      - Wed, 02 Nov 2016 03:05:06 GMT
+      Date:
+      - Wed, 02 Nov 2016 03:05:06 GMT
+      Cache-Control:
+      - private, max-age=300, must-revalidate, no-transform
+      Etag:
+      - '"sZ5p5Mo8dPpfIzLYQBF8QIQJym0/GwypUcHEeKVqf9MTFmk2217Pq6Y"'
+      Vary:
+      - Origin
+      - X-Origin
+      Content-Type:
+      - application/json; charset=UTF-8
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      Content-Length:
+      - '520'
+      Server:
+      - GSE
+      Alt-Svc:
+      - quic=":443"; ma=2592000; v="36,35,34"
+      Connection:
+      - close
+    body:
+      encoding: UTF-8
+      string: "{\n \"items\": [\n  {\n   \"id\": \"4-kTfNZTGiA\",\n   \"snippet\":
+        {\n    \"publishedAt\": \"2016-10-28T13:52:12.000Z\",\n    \"channelId\":
+        \"UCq0Toe9z00Nzkd34htvdQmg\",\n    \"title\": \"【真】【耳機福利】【雙聲道福利】帶上你的耳機，給你不一樣的聽歌向！【第十五期】\",\n
+        \   \"description\": \"\U0001F60E\U0001F60E\\n歌單：\\n四月謊OP\\n向日葵\\n食戟之靈第二季OP
+        \\n吉原\\n夢太晚\\n鳥之夢\\n\\n轉自：Bilibili\\nUP主:格陵蘭雪泥娃娃\\n網址： http://www.bilibili.com/video/av3160991\"\n
+        \  }\n  }\n ]\n}\n"
+    http_version: 
+  recorded_at: Wed, 02 Nov 2016 03:05:06 GMT
+- request:
+    method: get
+    uri: https://www.googleapis.com/youtube/v3/commentThreads?key=<API_KEY>&order=relevance&part=snippet&videoId=4-kTfNZTGiA
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - www.googleapis.com
+      User-Agent:
+      - http.rb/2.0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Expires:
+      - Wed, 02 Nov 2016 03:05:06 GMT
+      Date:
+      - Wed, 02 Nov 2016 03:05:06 GMT
+      Cache-Control:
+      - private, max-age=0, must-revalidate, no-transform
+      Etag:
+      - '"sZ5p5Mo8dPpfIzLYQBF8QIQJym0/XUaVa1YsEUqbeTrz0L0Auzcom6c"'
+      Vary:
+      - Origin
+      - X-Origin
+      Content-Type:
+      - application/json; charset=UTF-8
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      Content-Length:
+      - '15839'
+      Server:
+      - GSE
+      Alt-Svc:
+      - quic=":443"; ma=2592000; v="36,35,34"
+      Connection:
+      - close
+    body:
+      encoding: UTF-8
+      string: "{\n \"kind\": \"youtube#commentThreadListResponse\",\n \"etag\": \"\\\"sZ5p5Mo8dPpfIzLYQBF8QIQJym0/XUaVa1YsEUqbeTrz0L0Auzcom6c\\\"\",\n
+        \"pageInfo\": {\n  \"totalResults\": 14,\n  \"resultsPerPage\": 20\n },\n
+        \"items\": [\n  {\n   \"kind\": \"youtube#commentThread\",\n   \"etag\": \"\\\"sZ5p5Mo8dPpfIzLYQBF8QIQJym0/mYvy2jxkS6ATE2yJNH-dx-EKVL8\\\"\",\n
+        \  \"id\": \"z123hrsjkxaetbrsq23ju3ebrxzpjhavz\",\n   \"snippet\": {\n    \"videoId\":
+        \"4-kTfNZTGiA\",\n    \"topLevelComment\": {\n     \"kind\": \"youtube#comment\",\n
+        \    \"etag\": \"\\\"sZ5p5Mo8dPpfIzLYQBF8QIQJym0/LCZKU98zMjkfIdqXjyR6iCC5Y3c\\\"\",\n
+        \    \"id\": \"z123hrsjkxaetbrsq23ju3ebrxzpjhavz\",\n     \"snippet\": {\n
+        \     \"authorDisplayName\": \"小萌夢\",\n      \"authorProfileImageUrl\": \"https://lh3.googleusercontent.com/-XdUIqdMkCWA/AAAAAAAAAAI/AAAAAAAAAAA/4252rscbv5M/photo.jpg?sz=50\",\n
+        \     \"authorChannelUrl\": \"http://www.youtube.com/channel/UCbEYbd6KYEraQ-9P07FZRcg\",\n
+        \     \"authorChannelId\": {\n       \"value\": \"UCbEYbd6KYEraQ-9P07FZRcg\"\n
+        \     },\n      \"videoId\": \"4-kTfNZTGiA\",\n      \"textDisplay\": \"只知道其中的幾個動漫\\ufeff\",\n
+        \     \"canRate\": false,\n      \"viewerRating\": \"none\",\n      \"likeCount\":
+        1,\n      \"publishedAt\": \"2016-10-28T14:36:45.000Z\",\n      \"updatedAt\":
+        \"2016-10-28T14:36:45.000Z\"\n     }\n    },\n    \"canReply\": false,\n    \"totalReplyCount\":
+        7,\n    \"isPublic\": true\n   }\n  },\n  {\n   \"kind\": \"youtube#commentThread\",\n
+        \  \"etag\": \"\\\"sZ5p5Mo8dPpfIzLYQBF8QIQJym0/AaZiXdTYfcfBeHB4CPtDe2foT3s\\\"\",\n
+        \  \"id\": \"z121fjlx4myxylbnf220yhfpvpr4ex1su\",\n   \"snippet\": {\n    \"videoId\":
+        \"4-kTfNZTGiA\",\n    \"topLevelComment\": {\n     \"kind\": \"youtube#comment\",\n
+        \    \"etag\": \"\\\"sZ5p5Mo8dPpfIzLYQBF8QIQJym0/-zO6-qIOfKCmUtIDDxTAsiLZWlI\\\"\",\n
+        \    \"id\": \"z121fjlx4myxylbnf220yhfpvpr4ex1su\",\n     \"snippet\": {\n
+        \     \"authorDisplayName\": \"陳秋梅\",\n      \"authorProfileImageUrl\": \"https://lh3.googleusercontent.com/-XdUIqdMkCWA/AAAAAAAAAAI/AAAAAAAAAAA/4252rscbv5M/photo.jpg?sz=50\",\n
+        \     \"authorChannelUrl\": \"http://www.youtube.com/channel/UCoBQoHwNcgzKFtp3xFsNgLg\",\n
+        \     \"authorChannelId\": {\n       \"value\": \"UCoBQoHwNcgzKFtp3xFsNgLg\"\n
+        \     },\n      \"videoId\": \"4-kTfNZTGiA\",\n      \"textDisplay\": \"躺在地上的巨人是？\\ufeff\",\n
+        \     \"canRate\": false,\n      \"viewerRating\": \"none\",\n      \"likeCount\":
+        1,\n      \"publishedAt\": \"2016-10-29T01:53:26.000Z\",\n      \"updatedAt\":
+        \"2016-10-29T01:53:26.000Z\"\n     }\n    },\n    \"canReply\": false,\n    \"totalReplyCount\":
+        1,\n    \"isPublic\": true\n   }\n  },\n  {\n   \"kind\": \"youtube#commentThread\",\n
+        \  \"etag\": \"\\\"sZ5p5Mo8dPpfIzLYQBF8QIQJym0/ocE4kW2uVWjHF8gngeP4sRevOJg\\\"\",\n
+        \  \"id\": \"z122izpbcovswzvob04cin15izumwdkg4hs\",\n   \"snippet\": {\n    \"videoId\":
+        \"4-kTfNZTGiA\",\n    \"topLevelComment\": {\n     \"kind\": \"youtube#comment\",\n
+        \    \"etag\": \"\\\"sZ5p5Mo8dPpfIzLYQBF8QIQJym0/N3dHTu0qaRRdQGZWGpbS1siVPwo\\\"\",\n
+        \    \"id\": \"z122izpbcovswzvob04cin15izumwdkg4hs\",\n     \"snippet\": {\n
+        \     \"authorDisplayName\": \"林豐睿\",\n      \"authorProfileImageUrl\": \"https://lh6.googleusercontent.com/-5XI1xQfgbYY/AAAAAAAAAAI/AAAAAAAAABU/1cFK1VD-hy8/photo.jpg?sz=50\",\n
+        \     \"authorChannelUrl\": \"http://www.youtube.com/channel/UCHcaF4HsDzDmHcWflynBldA\",\n
+        \     \"authorChannelId\": {\n       \"value\": \"UCHcaF4HsDzDmHcWflynBldA\"\n
+        \     },\n      \"videoId\": \"4-kTfNZTGiA\",\n      \"textDisplay\": \"求第二首歌的歌名（是叫向日葵嗎）\\ufeff\",\n
+        \     \"canRate\": false,\n      \"viewerRating\": \"none\",\n      \"likeCount\":
+        1,\n      \"publishedAt\": \"2016-10-31T22:23:18.000Z\",\n      \"updatedAt\":
+        \"2016-10-31T22:23:18.000Z\"\n     }\n    },\n    \"canReply\": false,\n    \"totalReplyCount\":
+        2,\n    \"isPublic\": true\n   }\n  },\n  {\n   \"kind\": \"youtube#commentThread\",\n
+        \  \"etag\": \"\\\"sZ5p5Mo8dPpfIzLYQBF8QIQJym0/TkIk9EAAhdXk9Pn1C9ywqrCidtc\\\"\",\n
+        \  \"id\": \"z12axfziulmzfhhji04cjj5hltnnzrwzs0o\",\n   \"snippet\": {\n    \"videoId\":
+        \"4-kTfNZTGiA\",\n    \"topLevelComment\": {\n     \"kind\": \"youtube#comment\",\n
+        \    \"etag\": \"\\\"sZ5p5Mo8dPpfIzLYQBF8QIQJym0/X60WbpwvuaReaLc5brdrPKHWb3w\\\"\",\n
+        \    \"id\": \"z12axfziulmzfhhji04cjj5hltnnzrwzs0o\",\n     \"snippet\": {\n
+        \     \"authorDisplayName\": \"最爱四糸乃\",\n      \"authorProfileImageUrl\":
+        \"https://lh3.googleusercontent.com/-tAlvQFNYCFI/AAAAAAAAAAI/AAAAAAAAAD8/GxfYOGz8UB0/photo.jpg?sz=50\",\n
+        \     \"authorChannelUrl\": \"http://www.youtube.com/channel/UC2-8jdXWkNInMppwkjpKsHw\",\n
+        \     \"authorChannelId\": {\n       \"value\": \"UC2-8jdXWkNInMppwkjpKsHw\"\n
+        \     },\n      \"videoId\": \"4-kTfNZTGiA\",\n      \"textDisplay\": \"嗨嗨\U0001F61C\U0001F61C\\ufeff\",\n
+        \     \"canRate\": false,\n      \"viewerRating\": \"none\",\n      \"likeCount\":
+        1,\n      \"publishedAt\": \"2016-10-28T13:54:35.000Z\",\n      \"updatedAt\":
+        \"2016-10-28T13:54:35.000Z\"\n     }\n    },\n    \"canReply\": false,\n    \"totalReplyCount\":
+        1,\n    \"isPublic\": true\n   }\n  },\n  {\n   \"kind\": \"youtube#commentThread\",\n
+        \  \"etag\": \"\\\"sZ5p5Mo8dPpfIzLYQBF8QIQJym0/N9DnN8OFd1gWaL-NT_sbSjL4eh4\\\"\",\n
+        \  \"id\": \"z13njj3xvmasfbof222ycrrhwvmjtn2wj04\",\n   \"snippet\": {\n    \"videoId\":
+        \"4-kTfNZTGiA\",\n    \"topLevelComment\": {\n     \"kind\": \"youtube#comment\",\n
+        \    \"etag\": \"\\\"sZ5p5Mo8dPpfIzLYQBF8QIQJym0/ZhaElgVDZsix9FsiPqcItoRbNkI\\\"\",\n
+        \    \"id\": \"z13njj3xvmasfbof222ycrrhwvmjtn2wj04\",\n     \"snippet\": {\n
+        \     \"authorDisplayName\": \"王子\",\n      \"authorProfileImageUrl\": \"https://lh3.googleusercontent.com/-XdUIqdMkCWA/AAAAAAAAAAI/AAAAAAAAAAA/4252rscbv5M/photo.jpg?sz=50\",\n
+        \     \"authorChannelUrl\": \"http://www.youtube.com/channel/UC1QNjsL6n9kENIzmz6sOQ9A\",\n
+        \     \"authorChannelId\": {\n       \"value\": \"UC1QNjsL6n9kENIzmz6sOQ9A\"\n
+        \     },\n      \"videoId\": \"4-kTfNZTGiA\",\n      \"textDisplay\": \"求歌名，感謝\\ufeff\",\n
+        \     \"canRate\": false,\n      \"viewerRating\": \"none\",\n      \"likeCount\":
+        3,\n      \"publishedAt\": \"2016-10-28T16:38:12.000Z\",\n      \"updatedAt\":
+        \"2016-10-28T16:38:12.000Z\"\n     }\n    },\n    \"canReply\": false,\n    \"totalReplyCount\":
+        0,\n    \"isPublic\": true\n   }\n  },\n  {\n   \"kind\": \"youtube#commentThread\",\n
+        \  \"etag\": \"\\\"sZ5p5Mo8dPpfIzLYQBF8QIQJym0/8Dq0Fts9m4SO0DbwW8rRi_8ZYBU\\\"\",\n
+        \  \"id\": \"z13qfvfagnndeludz22lsluaepnpt52fi\",\n   \"snippet\": {\n    \"videoId\":
+        \"4-kTfNZTGiA\",\n    \"topLevelComment\": {\n     \"kind\": \"youtube#comment\",\n
+        \    \"etag\": \"\\\"sZ5p5Mo8dPpfIzLYQBF8QIQJym0/g8PSR_3aPjLARY538A10Dnng5sk\\\"\",\n
+        \    \"id\": \"z13qfvfagnndeludz22lsluaepnpt52fi\",\n     \"snippet\": {\n
+        \     \"authorDisplayName\": \"默生人\",\n      \"authorProfileImageUrl\": \"https://lh3.googleusercontent.com/-7vgiye-v_fw/AAAAAAAAAAI/AAAAAAAAABY/iarzYuX9Sec/photo.jpg?sz=50\",\n
+        \     \"authorChannelUrl\": \"http://www.youtube.com/channel/UCEeZqWFqdwrYF-_bGTCuPhg\",\n
+        \     \"authorChannelId\": {\n       \"value\": \"UCEeZqWFqdwrYF-_bGTCuPhg\"\n
+        \     },\n      \"videoId\": \"4-kTfNZTGiA\",\n      \"textDisplay\": \"求\\u003ca
+        href=\\\"http://www.youtube.com/watch?v=4-kTfNZTGiA&amp;t=16m42s\\\" class=\\\"ot-anchor\\\"\\u003e16:42\\u003c/a\\u003e開始的那首中文歌的歌名QQ\\ufeff\",\n
+        \     \"canRate\": false,\n      \"viewerRating\": \"none\",\n      \"likeCount\":
+        1,\n      \"publishedAt\": \"2016-10-30T02:21:24.000Z\",\n      \"updatedAt\":
+        \"2016-10-30T02:21:24.000Z\"\n     }\n    },\n    \"canReply\": false,\n    \"totalReplyCount\":
+        0,\n    \"isPublic\": true\n   }\n  },\n  {\n   \"kind\": \"youtube#commentThread\",\n
+        \  \"etag\": \"\\\"sZ5p5Mo8dPpfIzLYQBF8QIQJym0/K12FpJQiwvmINO35rw5l-tkawjU\\\"\",\n
+        \  \"id\": \"z12hzlmrttijcd55y04ccbiyfrmkejkhjas\",\n   \"snippet\": {\n    \"videoId\":
+        \"4-kTfNZTGiA\",\n    \"topLevelComment\": {\n     \"kind\": \"youtube#comment\",\n
+        \    \"etag\": \"\\\"sZ5p5Mo8dPpfIzLYQBF8QIQJym0/poF3qKhivD1AgQBrvKaX0P32Hbc\\\"\",\n
+        \    \"id\": \"z12hzlmrttijcd55y04ccbiyfrmkejkhjas\",\n     \"snippet\": {\n
+        \     \"authorDisplayName\": \"鐧圄\",\n      \"authorProfileImageUrl\": \"https://lh3.googleusercontent.com/-XdUIqdMkCWA/AAAAAAAAAAI/AAAAAAAAAAA/4252rscbv5M/photo.jpg?sz=50\",\n
+        \     \"authorChannelUrl\": \"http://www.youtube.com/channel/UCggra6cW9X2ofWD43sBU0-Q\",\n
+        \     \"authorChannelId\": {\n       \"value\": \"UCggra6cW9X2ofWD43sBU0-Q\"\n
+        \     },\n      \"videoId\": \"4-kTfNZTGiA\",\n      \"textDisplay\": \"第二章圖片
+        是哪部動漫的?\\ufeff\",\n      \"canRate\": false,\n      \"viewerRating\": \"none\",\n
+        \     \"likeCount\": 1,\n      \"publishedAt\": \"2016-10-30T08:51:52.000Z\",\n
+        \     \"updatedAt\": \"2016-10-30T08:51:52.000Z\"\n     }\n    },\n    \"canReply\":
+        false,\n    \"totalReplyCount\": 0,\n    \"isPublic\": true\n   }\n  },\n
+        \ {\n   \"kind\": \"youtube#commentThread\",\n   \"etag\": \"\\\"sZ5p5Mo8dPpfIzLYQBF8QIQJym0/xwp22aBIR9GX6OXC9efIsR9ZEgY\\\"\",\n
+        \  \"id\": \"z12uetvyennffbaly22yxjw4oyqwvvcqd04\",\n   \"snippet\": {\n    \"videoId\":
+        \"4-kTfNZTGiA\",\n    \"topLevelComment\": {\n     \"kind\": \"youtube#comment\",\n
+        \    \"etag\": \"\\\"sZ5p5Mo8dPpfIzLYQBF8QIQJym0/wHlWWml9VuZ6nArrCL6nEmqHb_M\\\"\",\n
+        \    \"id\": \"z12uetvyennffbaly22yxjw4oyqwvvcqd04\",\n     \"snippet\": {\n
+        \     \"authorDisplayName\": \"昴菜月\",\n      \"authorProfileImageUrl\": \"https://lh5.googleusercontent.com/-LNTYlIjfrTk/AAAAAAAAAAI/AAAAAAAAAAc/g2CbgKj4Jgg/photo.jpg?sz=50\",\n
+        \     \"authorChannelUrl\": \"http://www.youtube.com/channel/UCDY4nmHFUYrJ7jw5b9XeLNQ\",\n
+        \     \"authorChannelId\": {\n       \"value\": \"UCDY4nmHFUYrJ7jw5b9XeLNQ\"\n
+        \     },\n      \"videoId\": \"4-kTfNZTGiA\",\n      \"textDisplay\": \"第一張好工口(性感)哦！\\ufeff\",\n
+        \     \"canRate\": false,\n      \"viewerRating\": \"none\",\n      \"likeCount\":
+        1,\n      \"publishedAt\": \"2016-10-29T10:41:16.000Z\",\n      \"updatedAt\":
+        \"2016-10-29T10:41:38.000Z\"\n     }\n    },\n    \"canReply\": false,\n    \"totalReplyCount\":
+        0,\n    \"isPublic\": true\n   }\n  },\n  {\n   \"kind\": \"youtube#commentThread\",\n
+        \  \"etag\": \"\\\"sZ5p5Mo8dPpfIzLYQBF8QIQJym0/VgSfcNlLBdzLsjNnQ0YEHm0AEzs\\\"\",\n
+        \  \"id\": \"z12jd15bfwz3invai04cjlawdyzky5ox0kc0k\",\n   \"snippet\": {\n
+        \   \"videoId\": \"4-kTfNZTGiA\",\n    \"topLevelComment\": {\n     \"kind\":
+        \"youtube#comment\",\n     \"etag\": \"\\\"sZ5p5Mo8dPpfIzLYQBF8QIQJym0/WMqUJBntkSSOhbMMoXo81XO58w0\\\"\",\n
+        \    \"id\": \"z12jd15bfwz3invai04cjlawdyzky5ox0kc0k\",\n     \"snippet\":
+        {\n      \"authorDisplayName\": \"周耕弘\",\n      \"authorProfileImageUrl\":
+        \"https://lh3.googleusercontent.com/-XdUIqdMkCWA/AAAAAAAAAAI/AAAAAAAAAAA/4252rscbv5M/photo.jpg?sz=50\",\n
+        \     \"authorChannelUrl\": \"http://www.youtube.com/channel/UCfZiVbss7WqCCDf389Rxb-g\",\n
+        \     \"authorChannelId\": {\n       \"value\": \"UCfZiVbss7WqCCDf389Rxb-g\"\n
+        \     },\n      \"videoId\": \"4-kTfNZTGiA\",\n      \"textDisplay\": \"................................全聽過
+        \  為啥不早出    浪費我手機儲存空間..................\\ufeff\",\n      \"canRate\": false,\n
+        \     \"viewerRating\": \"none\",\n      \"likeCount\": 1,\n      \"publishedAt\":
+        \"2016-10-28T14:03:11.000Z\",\n      \"updatedAt\": \"2016-10-28T14:03:11.000Z\"\n
+        \    }\n    },\n    \"canReply\": false,\n    \"totalReplyCount\": 6,\n    \"isPublic\":
+        true\n   }\n  },\n  {\n   \"kind\": \"youtube#commentThread\",\n   \"etag\":
+        \"\\\"sZ5p5Mo8dPpfIzLYQBF8QIQJym0/0i1cBYEYbL4VdNy3iyAWr6reVps\\\"\",\n   \"id\":
+        \"z12mc3prnn2mwryza04ccbsiumqddxjyvwk0k\",\n   \"snippet\": {\n    \"videoId\":
+        \"4-kTfNZTGiA\",\n    \"topLevelComment\": {\n     \"kind\": \"youtube#comment\",\n
+        \    \"etag\": \"\\\"sZ5p5Mo8dPpfIzLYQBF8QIQJym0/aWafZB0WKdUmNWtN_WcKdIHhUno\\\"\",\n
+        \    \"id\": \"z12mc3prnn2mwryza04ccbsiumqddxjyvwk0k\",\n     \"snippet\":
+        {\n      \"authorDisplayName\": \"望雪月\",\n      \"authorProfileImageUrl\":
+        \"https://lh4.googleusercontent.com/-kxY7kWsmiuA/AAAAAAAAAAI/AAAAAAAAAHg/nWUK13t6Vvg/photo.jpg?sz=50\",\n
+        \     \"authorChannelUrl\": \"http://www.youtube.com/channel/UCcvWVnWwIOnUoczyILbIQpw\",\n
+        \     \"authorChannelId\": {\n       \"value\": \"UCcvWVnWwIOnUoczyILbIQpw\"\n
+        \     },\n      \"videoId\": \"4-kTfNZTGiA\",\n      \"textDisplay\": \"哦~了解\\ufeff\",\n
+        \     \"canRate\": false,\n      \"viewerRating\": \"none\",\n      \"likeCount\":
+        1,\n      \"publishedAt\": \"2016-10-29T01:02:28.000Z\",\n      \"updatedAt\":
+        \"2016-10-29T01:02:28.000Z\"\n     }\n    },\n    \"canReply\": false,\n    \"totalReplyCount\":
+        0,\n    \"isPublic\": true\n   }\n  },\n  {\n   \"kind\": \"youtube#commentThread\",\n
+        \  \"etag\": \"\\\"sZ5p5Mo8dPpfIzLYQBF8QIQJym0/632kpwayZ36j6oNv0ZjzX7zdIRE\\\"\",\n
+        \  \"id\": \"z133cnxrqxnmwpgij04cexgwyqzczlaah1o\",\n   \"snippet\": {\n    \"videoId\":
+        \"4-kTfNZTGiA\",\n    \"topLevelComment\": {\n     \"kind\": \"youtube#comment\",\n
+        \    \"etag\": \"\\\"sZ5p5Mo8dPpfIzLYQBF8QIQJym0/w8tflRRJgXmLpaKEi37ee3gOVaU\\\"\",\n
+        \    \"id\": \"z133cnxrqxnmwpgij04cexgwyqzczlaah1o\",\n     \"snippet\": {\n
+        \     \"authorDisplayName\": \"寒月鬿砅\",\n      \"authorProfileImageUrl\": \"https://lh3.googleusercontent.com/-o4Q44ui1p14/AAAAAAAAAAI/AAAAAAAABtE/FUHlqEwvIcU/photo.jpg?sz=50\",\n
+        \     \"authorChannelUrl\": \"http://www.youtube.com/channel/UCAU2rADZZg8yQFso5Yg0tnA\",\n
+        \     \"authorChannelId\": {\n       \"value\": \"UCAU2rADZZg8yQFso5Yg0tnA\"\n
+        \     },\n      \"videoId\": \"4-kTfNZTGiA\",\n      \"textDisplay\": \"辛苦了~~\\ufeff\",\n
+        \     \"canRate\": false,\n      \"viewerRating\": \"none\",\n      \"likeCount\":
+        1,\n      \"publishedAt\": \"2016-10-28T15:55:00.000Z\",\n      \"updatedAt\":
+        \"2016-10-28T15:55:00.000Z\"\n     }\n    },\n    \"canReply\": false,\n    \"totalReplyCount\":
+        0,\n    \"isPublic\": true\n   }\n  },\n  {\n   \"kind\": \"youtube#commentThread\",\n
+        \  \"etag\": \"\\\"sZ5p5Mo8dPpfIzLYQBF8QIQJym0/qfpT5tAxu2UR3gzmdOSM2h0n5_o\\\"\",\n
+        \  \"id\": \"z12ufblhhsb3dfavj22jv1arimetyn3wa04\",\n   \"snippet\": {\n    \"videoId\":
+        \"4-kTfNZTGiA\",\n    \"topLevelComment\": {\n     \"kind\": \"youtube#comment\",\n
+        \    \"etag\": \"\\\"sZ5p5Mo8dPpfIzLYQBF8QIQJym0/vokNLKv-TP525JHG2kzAQLRNC3w\\\"\",\n
+        \    \"id\": \"z12ufblhhsb3dfavj22jv1arimetyn3wa04\",\n     \"snippet\": {\n
+        \     \"authorDisplayName\": \"james Ng\",\n      \"authorProfileImageUrl\":
+        \"https://lh3.googleusercontent.com/-XdUIqdMkCWA/AAAAAAAAAAI/AAAAAAAAAAA/4252rscbv5M/photo.jpg?sz=50\",\n
+        \     \"authorChannelUrl\": \"http://www.youtube.com/channel/UCGSCiJUKsqstplNxG6uo2YA\",\n
+        \     \"authorChannelId\": {\n       \"value\": \"UCGSCiJUKsqstplNxG6uo2YA\"\n
+        \     },\n      \"videoId\": \"4-kTfNZTGiA\",\n      \"textDisplay\": \"是鸟之诗，
+        不是鸟之梦\\ufeff\",\n      \"canRate\": false,\n      \"viewerRating\": \"none\",\n
+        \     \"likeCount\": 1,\n      \"publishedAt\": \"2016-10-29T06:14:10.000Z\",\n
+        \     \"updatedAt\": \"2016-10-29T06:14:10.000Z\"\n     }\n    },\n    \"canReply\":
+        false,\n    \"totalReplyCount\": 0,\n    \"isPublic\": true\n   }\n  },\n
+        \ {\n   \"kind\": \"youtube#commentThread\",\n   \"etag\": \"\\\"sZ5p5Mo8dPpfIzLYQBF8QIQJym0/krZZb_CjgMoqaKn6Zrx7eyKBPfw\\\"\",\n
+        \  \"id\": \"z13nybowmki1gbyps04cfxbgpkqnhpoh0g4\",\n   \"snippet\": {\n    \"videoId\":
+        \"4-kTfNZTGiA\",\n    \"topLevelComment\": {\n     \"kind\": \"youtube#comment\",\n
+        \    \"etag\": \"\\\"sZ5p5Mo8dPpfIzLYQBF8QIQJym0/SQpRGMXWYPWx9YD9EEeU6ud3nCA\\\"\",\n
+        \    \"id\": \"z13nybowmki1gbyps04cfxbgpkqnhpoh0g4\",\n     \"snippet\": {\n
+        \     \"authorDisplayName\": \"DreamFly夢翔\",\n      \"authorProfileImageUrl\":
+        \"https://lh3.googleusercontent.com/-s-mrz-_9yh4/AAAAAAAAAAI/AAAAAAAAAD8/MrUM5ISIoXA/photo.jpg?sz=50\",\n
+        \     \"authorChannelUrl\": \"http://www.youtube.com/channel/UCdYPg6ag4CuW4f1Ze1hgT9g\",\n
+        \     \"authorChannelId\": {\n       \"value\": \"UCdYPg6ag4CuW4f1Ze1hgT9g\"\n
+        \     },\n      \"videoId\": \"4-kTfNZTGiA\",\n      \"textDisplay\": \"求封面圖動漫\\ufeff\",\n
+        \     \"canRate\": false,\n      \"viewerRating\": \"none\",\n      \"likeCount\":
+        2,\n      \"publishedAt\": \"2016-10-28T13:57:23.000Z\",\n      \"updatedAt\":
+        \"2016-10-28T13:57:23.000Z\"\n     }\n    },\n    \"canReply\": false,\n    \"totalReplyCount\":
+        7,\n    \"isPublic\": true\n   }\n  },\n  {\n   \"kind\": \"youtube#commentThread\",\n
+        \  \"etag\": \"\\\"sZ5p5Mo8dPpfIzLYQBF8QIQJym0/U62YvUBwc7O5LMV3TNPstx6eNH8\\\"\",\n
+        \  \"id\": \"z12bczgxuzvcvty5y04ccbsiumqddxjyvwk0k\",\n   \"snippet\": {\n
+        \   \"videoId\": \"4-kTfNZTGiA\",\n    \"topLevelComment\": {\n     \"kind\":
+        \"youtube#comment\",\n     \"etag\": \"\\\"sZ5p5Mo8dPpfIzLYQBF8QIQJym0/7tbPPK05xS3N5jTi5oQC4HnClNU\\\"\",\n
+        \    \"id\": \"z12bczgxuzvcvty5y04ccbsiumqddxjyvwk0k\",\n     \"snippet\":
+        {\n      \"authorDisplayName\": \"望雪月\",\n      \"authorProfileImageUrl\":
+        \"https://lh4.googleusercontent.com/-kxY7kWsmiuA/AAAAAAAAAAI/AAAAAAAAAHg/nWUK13t6Vvg/photo.jpg?sz=50\",\n
+        \     \"authorChannelUrl\": \"http://www.youtube.com/channel/UCcvWVnWwIOnUoczyILbIQpw\",\n
+        \     \"authorChannelId\": {\n       \"value\": \"UCcvWVnWwIOnUoczyILbIQpw\"\n
+        \     },\n      \"videoId\": \"4-kTfNZTGiA\",\n      \"textDisplay\": \"哥辛苦了XD這麼認真幫大家製作歌曲。謝謝你\\ufeff\",\n
+        \     \"canRate\": false,\n      \"viewerRating\": \"none\",\n      \"likeCount\":
+        0,\n      \"publishedAt\": \"2016-10-28T14:47:17.000Z\",\n      \"updatedAt\":
+        \"2016-10-28T14:47:17.000Z\"\n     }\n    },\n    \"canReply\": false,\n    \"totalReplyCount\":
+        2,\n    \"isPublic\": true\n   }\n  }\n ]\n}\n"
+    http_version: 
+  recorded_at: Wed, 02 Nov 2016 03:05:07 GMT
+- request:
+    method: get
+    uri: https://www.googleapis.com/youtube/v3/comments?fields=items(snippet(authorChannelId,authorChannelUrl,authorDisplayName,authorProfileImageUrl,likeCount))&id=z123hrsjkxaetbrsq23ju3ebrxzpjhavz&key=<API_KEY>&part=snippet
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - www.googleapis.com
+      User-Agent:
+      - http.rb/2.0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Expires:
+      - Wed, 02 Nov 2016 03:05:07 GMT
+      Date:
+      - Wed, 02 Nov 2016 03:05:07 GMT
+      Cache-Control:
+      - private, max-age=0, must-revalidate, no-transform
+      Etag:
+      - '"sZ5p5Mo8dPpfIzLYQBF8QIQJym0/9L8HloXlMtMFZ4CZ1-b-sIB_I70"'
+      Vary:
+      - Origin
+      - X-Origin
+      Content-Type:
+      - application/json; charset=UTF-8
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      Content-Length:
+      - '392'
+      Server:
+      - GSE
+      Alt-Svc:
+      - quic=":443"; ma=2592000; v="36,35,34"
+      Connection:
+      - close
+    body:
+      encoding: UTF-8
+      string: |
+        {
+         "items": [
+          {
+           "snippet": {
+            "authorDisplayName": "小萌夢",
+            "authorProfileImageUrl": "https://lh3.googleusercontent.com/-XdUIqdMkCWA/AAAAAAAAAAI/AAAAAAAAAAA/4252rscbv5M/photo.jpg?sz=50",
+            "authorChannelUrl": "http://www.youtube.com/channel/UCbEYbd6KYEraQ-9P07FZRcg",
+            "authorChannelId": {
+             "value": "UCbEYbd6KYEraQ-9P07FZRcg"
+            },
+            "likeCount": 1
+           }
+          }
+         ]
+        }
+    http_version: 
+  recorded_at: Wed, 02 Nov 2016 03:05:07 GMT
+- request:
+    method: get
+    uri: https://www.googleapis.com/youtube/v3/comments?fields=items(snippet(authorChannelId,authorChannelUrl,authorDisplayName,authorProfileImageUrl,likeCount))&id=z121fjlx4myxylbnf220yhfpvpr4ex1su&key=<API_KEY>&part=snippet
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - www.googleapis.com
+      User-Agent:
+      - http.rb/2.0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Expires:
+      - Wed, 02 Nov 2016 03:06:31 GMT
+      Date:
+      - Wed, 02 Nov 2016 03:06:31 GMT
+      Cache-Control:
+      - private, max-age=0, must-revalidate, no-transform
+      Etag:
+      - '"sZ5p5Mo8dPpfIzLYQBF8QIQJym0/v4090x3PMpUbcSZPYfKLZYkhI0I"'
+      Vary:
+      - Origin
+      - X-Origin
+      Content-Type:
+      - application/json; charset=UTF-8
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      Content-Length:
+      - '392'
+      Server:
+      - GSE
+      Alt-Svc:
+      - quic=":443"; ma=2592000; v="36,35,34"
+      Connection:
+      - close
+    body:
+      encoding: UTF-8
+      string: |
+        {
+         "items": [
+          {
+           "snippet": {
+            "authorDisplayName": "陳秋梅",
+            "authorProfileImageUrl": "https://lh3.googleusercontent.com/-XdUIqdMkCWA/AAAAAAAAAAI/AAAAAAAAAAA/4252rscbv5M/photo.jpg?sz=50",
+            "authorChannelUrl": "http://www.youtube.com/channel/UCoBQoHwNcgzKFtp3xFsNgLg",
+            "authorChannelId": {
+             "value": "UCoBQoHwNcgzKFtp3xFsNgLg"
+            },
+            "likeCount": 1
+           }
+          }
+         ]
+        }
+    http_version: 
+  recorded_at: Wed, 02 Nov 2016 03:06:31 GMT
+- request:
+    method: get
+    uri: https://www.googleapis.com/youtube/v3/comments?fields=items(snippet(authorChannelId,authorChannelUrl,authorDisplayName,authorProfileImageUrl,likeCount))&id=z122izpbcovswzvob04cin15izumwdkg4hs&key=<API_KEY>&part=snippet
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - www.googleapis.com
+      User-Agent:
+      - http.rb/2.0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Expires:
+      - Wed, 02 Nov 2016 03:06:31 GMT
+      Date:
+      - Wed, 02 Nov 2016 03:06:31 GMT
+      Cache-Control:
+      - private, max-age=0, must-revalidate, no-transform
+      Etag:
+      - '"sZ5p5Mo8dPpfIzLYQBF8QIQJym0/7g5G2THnPK3cv4itA-e786VfJzw"'
+      Vary:
+      - Origin
+      - X-Origin
+      Content-Type:
+      - application/json; charset=UTF-8
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      Content-Length:
+      - '392'
+      Server:
+      - GSE
+      Alt-Svc:
+      - quic=":443"; ma=2592000; v="36,35,34"
+      Connection:
+      - close
+    body:
+      encoding: UTF-8
+      string: |
+        {
+         "items": [
+          {
+           "snippet": {
+            "authorDisplayName": "林豐睿",
+            "authorProfileImageUrl": "https://lh6.googleusercontent.com/-5XI1xQfgbYY/AAAAAAAAAAI/AAAAAAAAABU/1cFK1VD-hy8/photo.jpg?sz=50",
+            "authorChannelUrl": "http://www.youtube.com/channel/UCHcaF4HsDzDmHcWflynBldA",
+            "authorChannelId": {
+             "value": "UCHcaF4HsDzDmHcWflynBldA"
+            },
+            "likeCount": 1
+           }
+          }
+         ]
+        }
+    http_version: 
+  recorded_at: Wed, 02 Nov 2016 03:06:31 GMT
+recorded_with: VCR 3.0.3
