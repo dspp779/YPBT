@@ -14,9 +14,6 @@ describe 'Video specifications' do
 
   before do
     VCR.insert_cassette CASSETTE_FILE, record: :new_episodes
-    #  @youtube_api = YoutubeVideo::YtApi.new(
-    #    api_key: ENV['YOUTUBE_API_KEY']
-    #  )
   end
 
   after do
@@ -26,6 +23,9 @@ describe 'Video specifications' do
   describe 'YtApi Credentials' do
     it 'should be able to get a new api key with ENV credentials' do
       YoutubeVideo::YtApi.api_key.length.must_be :>, 0
+    end
+    it 'should be able to get a new access token with file credentials' do
+      YoutubeVideo::YtApi.config = { api_key: ENV['YOUTUBE_API_KEY'] }
     end
   end
 

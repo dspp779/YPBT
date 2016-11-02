@@ -4,7 +4,7 @@ $LOAD_PATH.unshift File.join(File.dirname(__FILE__), *%w(.. lib))
 require 'YPBT'
 
 video_id = ARGV[0]
-unless video_id
+unless video_id || ENV['YT_VIDEO_ID']
   puts 'USAGE: YPBT [video_id]'
   exit(1)
 end
