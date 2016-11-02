@@ -27,31 +27,13 @@ module YoutubeVideo
     end
 
     def self.comment_info(comment, index)
-      [
-        "#{index + 1}: ",
-        author_name_output(comment.author.author_name) + ":\n",
-        text_display_output(comment.text_display) + "\n",
-        'LIKE: ' + like_count_output(comment.author.like_count) + "\n",
-        'AuthorChannelUrl: ' + \
-          author_channel_url_output(comment.author.author_channel_url),
-        "\n\n"
-      ].join
-    end
-
-    def self.author_name_output(author_name)
-      author_name ? author_name : '(blank)'
-    end
-
-    def self.text_display_output(text_display)
-      text_display ? text_display : '(blank)'
-    end
-
-    def self.like_count_output(like_count)
-      like_count ? like_count.to_s : '(blank)'
-    end
-
-    def self.author_channel_url_output(author_channel_url)
-      author_channel_url ? author_channel_url.to_s : '(none)'
+      <<~STRING
+      #{index + 1}:
+        Autor: #{comment.author.author_name}
+        Comment: #{comment.text_display}
+        LIKE: #{comment.author.like_count}
+        AuthorChannelUrl: #{comment.author.author_channel_url}
+      STRING
     end
   end
 end

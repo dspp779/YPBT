@@ -9,7 +9,7 @@ module YoutubeVideo
       @author_name = data[0]['snippet']['authorDisplayName']
       @author_image_url = data[0]['snippet']['authorProfileImageUrl']
       @author_channel_url = data[0]['snippet']['authorChannelUrl']
-      @like_count = data[0]['snippet']['likeCount']
+      @like_count = data[0]['snippet']['likeCount'].to_i
     end
   end
 end
