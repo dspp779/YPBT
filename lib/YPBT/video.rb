@@ -6,7 +6,7 @@ module YoutubeVideo
   # Main class to setup a Video
   class Video
     attr_reader :title, :description, :dislike_count, :like_count,
-                :dislike_count, :comment_count, :view_count
+                :comment_count, :view_count
 
     def initialize(data:)
       @id = data['id']
