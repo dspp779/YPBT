@@ -24,4 +24,5 @@ YT_RESULT = YAML.load(File.read(RESULT_FILE))
 unless ENV.key? 'YOUTUBE_API_KEY'
   CREDENTIALS = YAML.load(File.read('config/credentials.yml'))
   ENV['YOUTUBE_API_KEY'] = CREDENTIALS[:YOUTUBE_API_KEY]
+  ENV['YT_VIDEO_ID'] = CREDENTIALS[:YT_VIDEO_ID]
 end
