@@ -2,23 +2,6 @@
 # frozen_string_literal: true
 $LOAD_PATH.unshift File.join(File.dirname(__FILE__), *%w(.. lib))
 require 'YPBT'
+require_relative '../lib/YPBT/runner.rb'
 
-video_id = ARGV[0]
-unless video_id || ENV['YT_VIDEO_ID']
-  puts 'USAGE: YPBT [video_id]'
-  exit(1)
-end
-
-video = YoutubeVideo::Video.find(video_id: video_id)
-puts video.title
-
-puts Array.new(video.title.length) { '-' }.join
-video.commentthreads.first(3).each.with_index do |comment, index|
-  print "#{index + 1}. "
-  puts comment.author.author_name + ':'
-  puts comment.text_display
-  print 'LIKE: '
-  puts comment.author.like_count if comment.author.like_count
-  puts "AuthorChannelUrl: #{comment.author.author_channel_url}"
-  puts
-end
+puts YoutubeVideo::Runner.run!(ARGV)

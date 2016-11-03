@@ -70,4 +70,9 @@ describe 'Video specifications' do
     # retrieved.author.author_image_url.must_equal comment['snippet']['authorProfileImageUrl']
     # retrieved.author.author_channel_url.must_equal comment['snippet']['authorChannelUrl']
   end
+
+  it 'should run the executable file' do
+    output = `YPBT #{TEST_VIDEO_ID}`
+    output.split("\n").length.must_be :>, 5
+  end
 end
