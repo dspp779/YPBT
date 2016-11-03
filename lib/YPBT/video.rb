@@ -5,11 +5,17 @@ require_relative 'youtube_api'
 module YoutubeVideo
   # Main class to setup a Video
   class Video
-    attr_reader :title
+    attr_reader :title, :description, :dislike_count, :like_count,
+                :comment_count, :view_count
 
     def initialize(data:)
-      @title = data['snippet']['title']
       @id = data['id']
+      @title = data['snippet']['title']
+      @description = data['snippet']['description']
+      @dislike_count = data['statistics']['dislikeCount'].to_i
+      @like_count = data['statistics']['likeCount'].to_i
+      @comment_count = data['statistics']['commentCount'].to_i
+      @view_count = data['statistics']['viewCount'].to_i
     end
 
     def commentthreads
@@ -20,6 +26,11 @@ module YoutubeVideo
           data: comment['snippet']['topLevelComment']
         )
       end
+    end
+
+    def embed_url
+      return @embed_url if @embed_url
+      @embed_url = "https://www.youtube.com/embed/#{@id}"
     end
 
     def self.find(video_id:)

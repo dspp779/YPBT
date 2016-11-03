@@ -21,11 +21,12 @@ module YoutubeVideo
     end
 
     def self.video_info(video_id)
-      field = 'items(id,snippet(channelId,description,publishedAt,title))'
+      field = 'items(id,snippet(channelId,description,publishedAt,title),'\
+              'statistics)'
       video_response = HTTP.get(yt_resource_url('videos'),
                                 params: { id:     video_id,
                                           key:    api_key,
-                                          part:   'snippet',
+                                          part:   'snippet,statistics',
                                           fields: field })
       JSON.parse(video_response.to_s)['items'].first
     end
