@@ -18,19 +18,20 @@ module YoutubeVideo
       @view_count = data['statistics']['viewCount'].to_i
     end
 
-    def commentthreads
-      return @commentthreads if @commentthreads
-      raw_threads = YoutubeVideo::YtApi.video_commentthreads_info(@id)
-      @commentthreads = raw_threads.map do |comment|
-        YoutubeVideo::Comment.new(
-          data: comment['snippet']['topLevelComment']
-        )
-      end
+    def comments
+      # contain only the comments which have time tag.
+      return @comments if @comments
+      
     end
 
     def embed_url
       return @embed_url if @embed_url
       @embed_url = "https://www.youtube.com/embed/#{@id}"
+    end
+
+    def time_tags
+      return @video_time_tag if @video_time_tag
+
     end
 
     def self.find(video_id:)

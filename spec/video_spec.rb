@@ -29,6 +29,34 @@ describe 'Video specifications' do
     end
   end
 
+  describe 'YtApi functions' do
+    it 'should be able to find video by video id' do
+      YoutubeVideo::YtApi.video_info(TEST_VIDEO_ID).must_be_instance_of Hash
+    end
+
+    it 'should be able find comment by comment id' do
+      result = YoutubeVideo::YtApi.comment_info(TEST_VIDEO_ID)
+      result.must_be_instance_of Hash
+      result['id'].must_equal TEST_VIDEO_ID
+    end
+
+    it 'should be able find comments by video id' do
+      next_page_token,comments = YoutubeVideo::YtApi.video_comments_info(TEST_VIDEO_ID)
+      next_page_token.must_be_instance_of String
+      comments.must_be_instance_of Array
+      comments.must_be :>,1
+      comments[0].must_be Hash
+    end
+
+    it 'should be able find comments that contain time tags by video_id' do
+      comments = YoutubeVideo::YtApi.time_tags_info(TEST_VIDEO_ID)
+      comments.must_be_instance_of Array
+      comments.must_be :>,1
+      comments[0].must_be Hash
+
+    end
+  end
+
   it 'should be able to open a video' do
     video = YoutubeVideo::Video.find(
       video_id: TEST_VIDEO_ID
