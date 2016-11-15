@@ -19,7 +19,7 @@ Gem::Specification.new do |s|
   s.executables << 'YPBT'
 
   s.add_runtime_dependency 'http', '~> 2.0'
-
+  s.add_runtime_dependency 'ruby-duration', '~>3.2.3'
   s.add_development_dependency 'minitest', '~> 5.9'
   s.add_development_dependency 'minitest-rg', '~> 5.2'
   s.add_development_dependency 'rake', '~> 11.3'
@@ -29,7 +29,6 @@ Gem::Specification.new do |s|
   s.add_development_dependency 'flog', '~> 4.4'
   s.add_development_dependency 'flay', '~> 2.8'
   s.add_development_dependency 'rubocop', '~> 0.42'
-
   s.homepage    =  'https://github.com/RubyStarts3/YPBT'
   s.license     =  'MIT'
 end

@@ -19,7 +19,7 @@ module YoutubeVideo
       title = video.title
       separator = Array.new(video.title.length) { '-' }.join
       video_info =
-        video.commentthreads.first(3).map.with_index do |comment, index|
+        video.comments.map.with_index do |comment, index|
           comment_info(comment, index)
         end.join
 

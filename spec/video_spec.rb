@@ -27,52 +27,22 @@ describe 'Video specifications' do
     it 'should be able to get a new access token with file credentials' do
       YoutubeVideo::YtApi.config = { api_key: ENV['YOUTUBE_API_KEY'] }
     end
-  end
 
-  it 'should be able to open a video' do
-    video = YoutubeVideo::Video.find(
-      video_id: TEST_VIDEO_ID
-    )
-    video.title.length.must_be :>, 0
-  end
-
-  it 'should get the latest commentThreads from a video' do
-    video = YoutubeVideo::Video.find(
-      video_id: TEST_VIDEO_ID
-    )
-    commentthreads = video.commentthreads
-    commentthreads.count.must_be :>, 10
-  end
-
-  it 'should get information about comment on the commentThreads' do
-    video = YoutubeVideo::Video.find(
-      video_id: TEST_VIDEO_ID
-    )
-
-    video.commentthreads.each do |comment|
-      comment.comment_id.wont_be_nil
-      comment.text_display.wont_be_nil
+    it 'should be able to open a video' do
+      video = YoutubeVideo::Video.find(
+        video_id: TEST_VIDEO_ID
+      )
+      video.title.length.must_be :>, 0
     end
-  end
 
-  it 'should find all parts of a full comment' do
-    comment = YT_RESULT['comment'].first
-    retrieved = YoutubeVideo::Comment.find(
-      comment_id: comment['id']
-    )
+    it 'should have comments' do
+      video = YoutubeVideo::Video.find(video_id: TEST_VIDEO_ID)
+      video.comments.length.must_be :>, 1
+    end
 
-    retrieved.comment_id.must_equal comment['id']
-    retrieved.published_at.must_equal comment['snippet']['publishedAt']
-    retrieved.updated_at.must_equal comment['snippet']['updateAt']
-    retrieved.text_display.must_equal comment['snippet']['textDisplay']
-
-    retrieved.author.wont_be_nil
-    # retrieved.author.author_image_url.must_equal comment['snippet']['authorProfileImageUrl']
-    # retrieved.author.author_channel_url.must_equal comment['snippet']['authorChannelUrl']
-  end
-
-  it 'should run the executable file' do
-    output = `YPBT #{TEST_VIDEO_ID}`
-    output.split("\n").length.must_be :>, 5
+    it 'should run the executable file' do
+      output = `YPBT #{TEST_VIDEO_ID}`
+      output.split("\n").length.must_be :>, 5
+    end
   end
 end
