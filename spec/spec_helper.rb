@@ -11,7 +11,6 @@ require './lib/YPBT/comment.rb'
 require './lib/YPBT/video.rb'
 require './lib/YPBT/author.rb'
 require './lib/YPBT/youtube_api.rb'
-
 require_relative '../lib/YPBT'
 
 FIXTURES_FOLDER = 'spec/fixtures'

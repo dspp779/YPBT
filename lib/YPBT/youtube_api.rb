@@ -10,7 +10,7 @@ module YoutubeVideo
     YT_COMPANY_URL = URI.join(YT_URL, "#{YT_COMPANY}/")
     API_VER = 'v3'
     YT_API_URL = URI.join(YT_COMPANY_URL, "#{API_VER}/")
-    TIME_TAG_PATTERN = /ot-anchor/
+    TIME_TAG_PATTERN = /http.+?youtube.+?\?.+?t=.+?\>([0-9:]+)<\/a>/
     def self.api_key
       return @api_key if @api_key
       @api_key = ENV['YOUTUBE_API_KEY']
@@ -22,11 +22,13 @@ module YoutubeVideo
 
     def self.video_info(video_id)
       field = 'items(id,snippet(channelId,description,publishedAt,title),'\
-              'statistics)'
+              'statistics(likeCount,dislikeCount,viewCount),'\
+              'contentDetails(duration))'
       video_response = HTTP.get(yt_resource_url('videos'),
                                 params: { id:     video_id,
                                           key:    api_key,
-                                          part:   'snippet,statistics',
+                                          part:   'snippet,statistics,
+                                                    contentDetails',
                                           fields: field })
       JSON.parse(video_response.to_s)['items'].first
     end

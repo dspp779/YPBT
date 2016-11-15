@@ -7567,4 +7567,75 @@ http_interactions:
         }
     http_version: 
   recorded_at: Mon, 14 Nov 2016 17:12:54 GMT
+- request:
+    method: get
+    uri: https://www.googleapis.com/youtube/v3/videos?fields=items(id,snippet(channelId,description,publishedAt,title),statistics(likeCount,dislikeCount,viewCount),contentDetails(duration))&id=vJOkR0Xz958&key=<API_KEY>&part=snippet,statistics,%0D%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20contentDetails
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - www.googleapis.com
+      User-Agent:
+      - http.rb/2.1.0
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Expires:
+      - Tue, 15 Nov 2016 19:15:31 GMT
+      Date:
+      - Tue, 15 Nov 2016 19:15:31 GMT
+      Cache-Control:
+      - private, max-age=0, must-revalidate, no-transform
+      Etag:
+      - '"sZ5p5Mo8dPpfIzLYQBF8QIQJym0/PSpJ8gXfvzf1hfUfJpXS_FBcbDc"'
+      Vary:
+      - Origin
+      - X-Origin
+      Content-Type:
+      - application/json; charset=UTF-8
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      Content-Length:
+      - '1161'
+      Server:
+      - GSE
+      Alt-Svc:
+      - quic=":443"; ma=2592000; v="36,35,34"
+      Connection:
+      - close
+    body:
+      encoding: UTF-8
+      string: |
+        {
+         "items": [
+          {
+           "id": "vJOkR0Xz958",
+           "snippet": {
+            "publishedAt": "2016-10-16T14:00:03.000Z",
+            "channelId": "UCQU5uVTG8h9LToACKrm1LMA",
+            "title": "桂河邊的逆襲！福利滿滿滿！！綜藝玩很大 x OPPO 【第五十九回 泰國 桂河】20161015【第115集完整版】",
+            "description": "史上玩最大的外景節目！！點選以下連結訂閱吧！！絕對讓你開心一整天\nhttps://goo.gl/RZ9nBT\n\n跟著OPPO玩很大:\n【OPPO F1s 自拍美顏機】\nhttps://www.youtube.com/watch?v=Zgt06Ybe_wo\n【OPPO F1s 極速指紋辨識】\nhttps://www.youtube.com/watch?v=oIabypUK0tM\n【OPPO R9|R9 Plus 楊冪秘密武器VOOC閃充】\nhttps://www.youtube.com/watch?v=upGq1TLeySc\n【OPPO R9 無敵自拍 最強閃充】\nhttps://www.youtube.com/watch?v=rXsl96nGinc\n【OPPO引領自拍風潮】\nhttps://www.youtube.com/watch?v=URI0L_YERFk\n\n更多精采獨家！只有Vidol看的到！！\nVidol在我手！明星跟著走！\nhttp://vidol.tv/"
+           },
+           "contentDetails": {
+            "duration": "PT1H35M21S"
+           },
+           "statistics": {
+            "viewCount": "1168346",
+            "likeCount": "1670",
+            "dislikeCount": "167"
+           }
+          }
+         ]
+        }
+    http_version: 
+  recorded_at: Tue, 15 Nov 2016 19:15:32 GMT
 recorded_with: VCR 3.0.3
