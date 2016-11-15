@@ -14,7 +14,7 @@ module YoutubeVideo
     end
 
     def start_time
-      @start_time.iso8601 if @start_time
+      @start_time&.iso8601
     end
 
     def end_time=(end_time)
@@ -22,12 +22,12 @@ module YoutubeVideo
     end
 
     def end_time
-      @end_time.iso8601 if @end_time
+      @end_time&.iso8601 if @end_time
     end
 
     def duration
       @duration = @end_time - @start_time if @end_time && @start_time
-      @duration.iso8601 if @duration
+      @duration&.iso8601 if @duration
     end
 
     def tag_type=(tag_type)

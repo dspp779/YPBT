@@ -23,7 +23,6 @@ describe 'time_tag specifications' do
   describe 'time_tag functions' do
     it 'should able find time tag from comment text' do
       comment = YoutubeVideo::Comment.find(comment_id: TEST_COMMENT_ID)
-      puts comment.class
       tags = YoutubeVideo::Timetag.find(comment: comment)
       tags.must_be_instance_of Array
       tags.length.must_be :==, 3
