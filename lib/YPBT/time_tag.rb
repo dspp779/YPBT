@@ -4,7 +4,8 @@ module YoutubeVideo
   TAG_TYPES = { MUSIC: 'music', VIDEO: 'video' }.freeze
   # comment's time tag infomation
   class Timetag
-    attr_reader :start_time, :end_time, :tag_type, :duration, :comment
+    attr_reader :start_time, :end_time, :tag_type, :duration, :comment,
+                :like_count
     def initialize(start_time:, comment:, end_time: nil, like_count: nil,
                    tag_type: nil)
       @start_time = string_to_time start_time
