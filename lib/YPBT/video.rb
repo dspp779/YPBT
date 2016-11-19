@@ -32,7 +32,7 @@ module YoutubeVideo
 
     def self.find(video_id:)
       video_data = YtApi.video_info(video_id)
-      new(data: video_data)
+      new(data: video_data) if video_data
     end
   end
 end
