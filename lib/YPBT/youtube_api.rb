@@ -58,6 +58,21 @@ module YoutubeVideo
       [next_page_token, comments]
     end
 
+    def self.channel_info(channel_id)
+      fields = 'items(id,snippet(title,description,thumbnails(default(url))))'
+      channel_response = HTTP.get(yt_resource_url('channels'),
+                                  params: {   id:     channel_id,
+                                              key:    api_key,
+                                              part:   'snippet',
+                                              fields: fields })
+      channel_data = JSON.parse(channel_response.to_s)['items'].first['snippet']
+      {
+        'title' => channel_data['title'],
+        'description' => channel_data['description'],
+        'image_url' => channel_data['thumbnails']['default']['url']
+      }
+    end
+
     def self.extract_comment(comment_threads)
       comments = comment_threads['items'].map do |item|
         comment = item['snippet']['topLevelComment']['snippet']
@@ -79,6 +94,7 @@ module YoutubeVideo
       end
       comments_with_tags
     end
+
 
     def self.time_tag?(comment)
       !(comment['textDisplay'] =~ TIME_TAG_PATTERN).nil?

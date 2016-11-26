@@ -7638,4 +7638,70 @@ http_interactions:
         }
     http_version: 
   recorded_at: Tue, 15 Nov 2016 19:15:32 GMT
+- request:
+    method: get
+    uri: https://www.googleapis.com/youtube/v3/channels?fields=items(id,snippet(title,description,thumbnails(default(url))))&id=UCQU5uVTG8h9LToACKrm1LMA&key=<API_KEY>&part=snippet
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - www.googleapis.com
+      User-Agent:
+      - http.rb/2.1.0
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Expires:
+      - Sat, 26 Nov 2016 17:49:03 GMT
+      Date:
+      - Sat, 26 Nov 2016 17:49:03 GMT
+      Cache-Control:
+      - private, max-age=300, must-revalidate, no-transform
+      Etag:
+      - '"5C5HHOaBSHC5ZXfkrT4ZlRCi01A/xfpoAxeRrarRKdINKlWt_uEEMHY"'
+      Vary:
+      - Origin
+      - X-Origin
+      Content-Type:
+      - application/json; charset=UTF-8
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      Content-Length:
+      - '373'
+      Server:
+      - GSE
+      Alt-Svc:
+      - quic=":443"; ma=2592000; v="36,35,34"
+      Connection:
+      - close
+    body:
+      encoding: UTF-8
+      string: |
+        {
+         "items": [
+          {
+           "id": "UCQU5uVTG8h9LToACKrm1LMA",
+           "snippet": {
+            "title": "我愛玩很大",
+            "description": "主隊大隊長：吳宗憲\n永久小隊長：KID林柏昇",
+            "thumbnails": {
+             "default": {
+              "url": "https://yt3.ggpht.com/-jOIQ6TK2ZlQ/AAAAAAAAAAI/AAAAAAAAAAA/xOpJCq8pGr0/s88-c-k-no-mo-rj-c0xffffff/photo.jpg"
+             }
+            }
+           }
+          }
+         ]
+        }
+    http_version: 
+  recorded_at: Sat, 26 Nov 2016 17:49:02 GMT
 recorded_with: VCR 3.0.3

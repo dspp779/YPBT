@@ -56,5 +56,13 @@ describe 'YtApi specifications' do
       comments[0].must_be_instance_of Hash
       comments[0]['textDisplay'].must_match(/[0-9]+:\d+/)
     end
+
+    it 'should be able to resolve channel' do
+      channel_info = YoutubeVideo::YtApi.channel_info(TEST_CHANEL_ID)
+      channel_info.must_be_instance_of Hash
+      channel_info['title'].length.must_be :>, 0
+      channel_info['description'].length.must_be :>, 0
+      channel_info['image_url'].must_match(/https:/)
+    end
   end
 end

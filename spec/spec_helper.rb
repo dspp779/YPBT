@@ -18,6 +18,7 @@ CASSETTES_FOLDER = "#{FIXTURES_FOLDER}/cassettes"
 CASSETTE_FILE = 'youtube_api'
 TEST_VIDEO_ID = 'vJOkR0Xz958'
 TEST_COMMENT_ID = 'z13dwdepqxvdvvmbj04chpaxmuvbwjxhsr40k'
+TEST_CHANEL_ID = 'UCQU5uVTG8h9LToACKrm1LMA'
 RESULT_FILE = "#{FIXTURES_FOLDER}/yt_api_results.yml"
 YT_RESULT = YAML.load(File.read(RESULT_FILE))
 

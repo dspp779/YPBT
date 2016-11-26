@@ -33,11 +33,19 @@ describe 'Video specifications' do
         video_id: TEST_VIDEO_ID
       )
       video.title.length.must_be :>, 0
+      video.channel_id.length.must_be :>, 0
     end
 
     it 'should have comments' do
       video = YoutubeVideo::Video.find(video_id: TEST_VIDEO_ID)
       video.comments.length.must_be :>, 1
+    end
+
+    it 'should have channel information' do
+      video = YoutubeVideo::Video.find(video_id: TEST_VIDEO_ID)
+      video.title.length.must_be :>, 0
+      video.channel_description.length.must_be :>, 0
+      video.channel_image_url.must_match(/https:/)
     end
 
     it 'should run the executable file' do
