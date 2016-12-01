@@ -17,6 +17,7 @@ module YoutubeVideo
       @like_count = data['statistics']['likeCount'].to_i
       @view_count = data['statistics']['viewCount'].to_i
       @duration = data['contentDetails']['duration']
+      @is_channel = false
     end
 
     def comments
@@ -27,17 +28,17 @@ module YoutubeVideo
     end
 
     def channel_title
-      load_channel_info unless @channel_title
+      load_channel_info unless @is_channel
       @channel_title
     end
 
     def channel_image_url
-      load_channel_info unless @channel_image_url
+      load_channel_info unless @is_channel
       @channel_image_url
     end
 
     def channel_description
-      load_channel_info unless @channel_description
+      load_channel_info unless @is_channel
       @channel_description
     end
 
@@ -55,9 +56,10 @@ module YoutubeVideo
 
     def load_channel_info
       channel_data = YtApi.channel_info @channel_id
-      @channel_title = channel_data['title']
-      @channel_image_url = channel_data['image_url']
-      @channel_description = channel_data['description']
+      @channel_title = channel_data['title'] if channel_data
+      @channel_image_url = channel_data['image_url'] if channel_data
+      @channel_description = channel_data['description'] if channel_data
+      @is_channel = true
     end
   end
 end

@@ -65,12 +65,14 @@ module YoutubeVideo
                                               key:    api_key,
                                               part:   'snippet',
                                               fields: fields })
-      channel_data = JSON.parse(channel_response.to_s)['items'].first['snippet']
-      {
-        'title' => channel_data['title'],
-        'description' => channel_data['description'],
-        'image_url' => channel_data['thumbnails']['default']['url']
-      }
+      channel_data = JSON.parse(channel_response.to_s)['items'].first
+      if channel_data
+        {
+          'title' => channel_data['snippet']['title'],
+          'description' => channel_data['snippet']['description'],
+          'image_url' => channel_data['snippet']['thumbnails']['default']['url']
+        }
+      end
     end
 
     def self.extract_comment(comment_threads)
