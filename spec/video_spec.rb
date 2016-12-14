@@ -48,6 +48,11 @@ describe 'Video specifications' do
       video.channel_image_url.must_match(/https:/)
     end
 
+    it 'should able to get popular videos' do
+      videos = YoutubeVideo::Video.find_popular(max_results: 25)
+      videos.length.must_be :==, 25
+    end
+    
     it 'should run the executable file' do
       output = `YPBT #{TEST_VIDEO_ID}`
       output.split("\n").length.must_be :>, 5

@@ -6,13 +6,16 @@ module YoutubeVideo
   # Main class to setup a Video
   class Video
     attr_reader :title, :description, :dislike_count, :like_count,
-                :comment_count, :view_count, :duration, :id, :channel_id
+                :comment_count, :view_count, :duration, :id, :channel_id,
+                :thumbnail_url, :category_id
 
     def initialize(data:)
       @id = data['id']
       @title = data['snippet']['title']
       @channel_id = data['snippet']['channelId']
       @description = data['snippet']['description']
+      @category_id = data['snippet']['categoryId']
+      @thumbnail_url = data['snippet']['thumbnails']['medium']['url']
       @dislike_count = data['statistics']['dislikeCount'].to_i
       @like_count = data['statistics']['likeCount'].to_i
       @view_count = data['statistics']['viewCount'].to_i
@@ -50,6 +53,11 @@ module YoutubeVideo
     def self.find(video_id:)
       video_data = YtApi.video_info(video_id)
       new(data: video_data) if video_data
+    end
+
+    def self.find_popular(max_results: 25)
+      videos_data = YtApi.popular_videos_info(max_results)
+      videos_data.map { |data| new(data: data) } unless videos_data.empty?
     end
 
     private

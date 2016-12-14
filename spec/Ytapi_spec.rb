@@ -64,5 +64,10 @@ describe 'YtApi specifications' do
       channel_info['description'].length.must_be :>, 0
       channel_info['image_url'].must_match(/https:/)
     end
+
+    it 'should be able to find popular videos' do
+      popular_videos = YoutubeVideo::YtApi.popular_videos_info
+      popular_videos.length.must_be :==, 25
+    end
   end
 end

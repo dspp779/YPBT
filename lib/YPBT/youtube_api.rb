@@ -21,7 +21,9 @@ module YoutubeVideo
     end
 
     def self.video_info(video_id)
-      field = 'items(id,snippet(channelId,description,publishedAt,title),'\
+      field = 'items(id,'\
+              'snippet(thumbnails(medium),channelId,description,'\
+              'publishedAt,title,categoryId),'\
               'statistics(likeCount,dislikeCount,viewCount),'\
               'contentDetails(duration))'
       video_response = HTTP.get(yt_resource_url('videos'),
@@ -31,6 +33,22 @@ module YoutubeVideo
                                                     contentDetails',
                                           fields: field })
       JSON.parse(video_response.to_s)['items'].first
+    end
+
+    def self.popular_videos_info(max_results = 25)
+      field = 'items(id,'\
+              'snippet(thumbnails(medium),channelId,description,'\
+              'publishedAt,title,categoryId),'\
+              'statistics(likeCount,dislikeCount,viewCount),'\
+              'contentDetails(duration))'
+      video_response = HTTP.get(yt_resource_url('videos'),
+                                params: { chart:     'mostpopular',
+                                          key:    api_key,
+                                          maxResults: max_results,
+                                          part:   'snippet,statistics,
+                                                    contentDetails',
+                                          fields: field })
+      JSON.parse(video_response.to_s)['items']
     end
 
     def self.comment_info(comment_id)
@@ -96,7 +114,6 @@ module YoutubeVideo
       end
       comments_with_tags
     end
-
 
     def self.time_tag?(comment)
       !(comment['textDisplay'] =~ TIME_TAG_PATTERN).nil?

@@ -7704,4 +7704,762 @@ http_interactions:
         }
     http_version: 
   recorded_at: Sat, 26 Nov 2016 17:49:02 GMT
+- request:
+    method: get
+    uri: https://www.googleapis.com/youtube/v3/videos?fields=items(id,snippet(thumbnails(medium),channelId,description,publishedAt,title,categoryId),statistics(likeCount,dislikeCount,viewCount),contentDetails(duration))&id=vJOkR0Xz958&key=<API_KEY>&part=snippet,statistics,%0D%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20contentDetails
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - www.googleapis.com
+      User-Agent:
+      - http.rb/2.1.0
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Expires:
+      - Wed, 14 Dec 2016 18:50:06 GMT
+      Date:
+      - Wed, 14 Dec 2016 18:50:06 GMT
+      Cache-Control:
+      - private, max-age=0, must-revalidate, no-transform
+      Etag:
+      - '"gMxXHe-zinKdE9lTnzKu8vjcmDI/Pikou1IEQB7hEXWsMuCRIhxOkZU"'
+      Vary:
+      - Origin
+      - X-Origin
+      Content-Type:
+      - application/json; charset=UTF-8
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      Content-Length:
+      - '1341'
+      Server:
+      - GSE
+      Alt-Svc:
+      - quic=":443"; ma=2592000; v="35,34"
+      Connection:
+      - close
+    body:
+      encoding: UTF-8
+      string: |
+        {
+         "items": [
+          {
+           "id": "vJOkR0Xz958",
+           "snippet": {
+            "publishedAt": "2016-10-16T14:00:03.000Z",
+            "channelId": "UCQU5uVTG8h9LToACKrm1LMA",
+            "title": "桂河邊的逆襲！福利滿滿滿！！綜藝玩很大 x OPPO 【第五十九回 泰國 桂河】20161015【第115集完整版】",
+            "description": "史上玩最大的外景節目！！點選以下連結訂閱吧！！絕對讓你開心一整天\nhttps://goo.gl/RZ9nBT\n\n跟著OPPO玩很大:\n【OPPO F1s 自拍美顏機】\nhttps://www.youtube.com/watch?v=Zgt06Ybe_wo\n【OPPO F1s 極速指紋辨識】\nhttps://www.youtube.com/watch?v=oIabypUK0tM\n【OPPO R9|R9 Plus 楊冪秘密武器VOOC閃充】\nhttps://www.youtube.com/watch?v=upGq1TLeySc\n【OPPO R9 無敵自拍 最強閃充】\nhttps://www.youtube.com/watch?v=rXsl96nGinc\n【OPPO引領自拍風潮】\nhttps://www.youtube.com/watch?v=URI0L_YERFk\n\n更多精采獨家！只有Vidol看的到！！\nVidol在我手！明星跟著走！\nhttp://vidol.tv/",
+            "thumbnails": {
+             "medium": {
+              "url": "https://i.ytimg.com/vi/vJOkR0Xz958/mqdefault.jpg",
+              "width": 320,
+              "height": 180
+             }
+            },
+            "categoryId": "24"
+           },
+           "contentDetails": {
+            "duration": "PT1H35M21S"
+           },
+           "statistics": {
+            "viewCount": "1274226",
+            "likeCount": "1742",
+            "dislikeCount": "182"
+           }
+          }
+         ]
+        }
+    http_version: 
+  recorded_at: Wed, 14 Dec 2016 18:50:08 GMT
+- request:
+    method: get
+    uri: https://www.googleapis.com/youtube/v3/videos?chart=mostpopular&fields=items(id,snippet(thumbnails(medium),channelId,description,publishedAt,title,categoryId),statistics(likeCount,dislikeCount,viewCount),contentDetails(duration))&key=<API_KEY>&maxResults=25&part=snippet,statistics,%0D%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20contentDetails
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - www.googleapis.com
+      User-Agent:
+      - http.rb/2.1.0
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Expires:
+      - Wed, 14 Dec 2016 18:50:18 GMT
+      Date:
+      - Wed, 14 Dec 2016 18:50:18 GMT
+      Cache-Control:
+      - private, max-age=0, must-revalidate, no-transform
+      Etag:
+      - '"gMxXHe-zinKdE9lTnzKu8vjcmDI/NzYohE7E7A9AQk4yEcRsKHUWlmI"'
+      Vary:
+      - Origin
+      - X-Origin
+      Content-Type:
+      - application/json; charset=UTF-8
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      Content-Length:
+      - '40659'
+      Server:
+      - GSE
+      Alt-Svc:
+      - quic=":443"; ma=2592000; v="35,34"
+      Connection:
+      - close
+    body:
+      encoding: UTF-8
+      string: |
+        {
+         "items": [
+          {
+           "id": "AFxCO_DyzYM",
+           "snippet": {
+            "publishedAt": "2016-12-14T06:32:59.000Z",
+            "channelId": "UCJ0uqCI0Vqr2Rrt1HseGirg",
+            "title": "Bruno Mars Carpool Karaoke",
+            "description": "James Corden and Bruno Mars drive through Los Angeles singing his hits, including tracks from the new album \"24K Magic,\" and chat about everything from Elvis to poker. Get Bruno Mars' new album '24K Magic' out now: https://brunom.rs/24kMagic\n\nStream ’24K Magic’\nSpotify: https://brunom.rs/24kMagicStream\nApple Music: https://brunom.rs/24kmagicAM\n\nDownload ’24K Magic’\niTunes: https://brunom.rs/24kMagic\nAmazon: https://brunom.rs/24kmagicamazon\nGoogle Play: https://brunom.rs/24kmagicGP\n\nConnect with Bruno:\nhttp://www.brunomars.com\nhttp://www.instagram.com/brunomars\nhttp://www.twitter.com/brunomars\nhttp://www.facebook.com/brunomars\n\n\n\"Subscribe To \"\"The Late Late Show\"\" Channel HERE: http://bit.ly/CordenYouTube\nWatch Full Episodes of \"\"The Late Late Show\"\" HERE: http://bit.ly/1ENyPw4\nLike \"\"The Late Late Show\"\" on Facebook HERE: http://on.fb.me/19PIHLC\nFollow \"\"The Late Late Show\"\" on Twitter HERE: http://bit.ly/1Iv0q6k\nFollow \"\"The Late Late Show\"\" on Google+ HERE: http://bit.ly/1N8a4OU\n\nWatch The Late Late Show with James Corden weeknights at 12:35 AM ET/11:35 PM CT. Only on CBS.\n\nGet the CBS app for iPhone & iPad! Click HERE: http://bit.ly/12rLxge\n\nGet new episodes of shows you love across devices the next day, stream live TV, and watch full seasons of CBS fan favorites anytime, anywhere with CBS All Access. Try it free! http://bit.ly/1OQA29B\n\n---\nEach week night, THE LATE LATE SHOW with JAMES CORDEN throws the ultimate late night after party with a mix of celebrity guests, edgy musical acts, games and sketches. Corden differentiates his show by offering viewers a peek behind-the-scenes into the green room, bringing all of his guests out at once and lending his musical and acting talents to various sketches. Additionally, bandleader Reggie Watts and the house band provide original, improvised music throughout the show. Since Corden took the reigns as host in March 2015, he has quickly become known for generating buzzworthy viral videos, such as Carpool Karaoke.\"",
+            "thumbnails": {
+             "medium": {
+              "url": "https://i.ytimg.com/vi/AFxCO_DyzYM/mqdefault.jpg",
+              "width": 320,
+              "height": 180
+             }
+            },
+            "categoryId": "24"
+           },
+           "contentDetails": {
+            "duration": "PT15M25S"
+           },
+           "statistics": {
+            "viewCount": "490758",
+            "likeCount": "246356",
+            "dislikeCount": "1376"
+           }
+          },
+          {
+           "id": "8Gjn0ObXWak",
+           "snippet": {
+            "publishedAt": "2016-12-13T19:20:05.000Z",
+            "channelId": "UClOf1XXinvZsy4wKPAkro2A",
+            "title": "[NEW SEASONAL EVENT] Welcome to Overwatch's Winter Wonderland!",
+            "description": "It's lookin’ downright festive in these parts: http://blizz.ly/OWW2016\n\nThe season of giving (and receiving) is here, and we’re ready to celebrate. From now until January 2, every day is a snow day in Overwatch! Unwrap all new holiday-themed loot, take a stroll through the decked halls of Hanamura and King's Row, and put your enemies on ice in our latest brawl: Mei’s Snowball Offensive.\n\nBegin Your Watch: http://blizz.ly/BuyOverwatch\nLike Us on Facebook: http://www.facebook.com/playoverwatch\nFollow Us on Twitter: http://www.twitter.com/playoverwatch\nFollow us on Instagram: https://www.instagram.com/playoverwatch",
+            "thumbnails": {
+             "medium": {
+              "url": "https://i.ytimg.com/vi/8Gjn0ObXWak/mqdefault.jpg",
+              "width": 320,
+              "height": 180
+             }
+            },
+            "categoryId": "20"
+           },
+           "contentDetails": {
+            "duration": "PT1M33S"
+           },
+           "statistics": {
+            "viewCount": "755293",
+            "likeCount": "34323",
+            "dislikeCount": "628"
+           }
+          },
+          {
+           "id": "ETpiA8ych30",
+           "snippet": {
+            "publishedAt": "2016-12-12T13:30:01.000Z",
+            "channelId": "UC-FQUIVQ-bZiefzBiQAa8Fw",
+            "title": "Jennifer Lawrence & Chris Pratt Insult Each Other | CONTAINS STRONG LANGUAGE!",
+            "description": "For more, head over to Radio 1 on BBC iPlayer http://bit.ly/Radio1BBCiPlayer\n\n\"I recently told you that you act like Adele sings.  I hate Adele.\" - Passengers stars Jennifer Lawrence & Chris Pratt take it in turns to INSULT EACH OTHER in the Playground Insults game on Scott Mills’ radio show on BBC Radio 1.\n\nWho will win when two Hollywood superstars rip each other apart?\n\nListen to Scott Mills and Chris Stark on BBC Radio 1, weekdays 1-4pm.\n\nPassengers is out on December 21st 2016 in the UK.\nFacebook: http://bit.ly/BBCR1facebook\nTwitter: http://bit.ly/BBCR1twitter\nInstagram: http://bit.ly/BBCR1instagram\nVine: http://bit.ly/BBCR1vine\nWebsite: http://bit.ly/BBCR1website",
+            "thumbnails": {
+             "medium": {
+              "url": "https://i.ytimg.com/vi/ETpiA8ych30/mqdefault.jpg",
+              "width": 320,
+              "height": 180
+             }
+            },
+            "categoryId": "1"
+           },
+           "contentDetails": {
+            "duration": "PT4M52S"
+           },
+           "statistics": {
+            "viewCount": "5343463",
+            "likeCount": "87292",
+            "dislikeCount": "2905"
+           }
+          },
+          {
+           "id": "-CZwFNh4utM",
+           "snippet": {
+            "publishedAt": "2016-12-13T15:00:00.000Z",
+            "channelId": "UCbaGn5VkOVlcRgIWAHcrJKA",
+            "title": "American Kids Try Christmas Foods from Around the World | Ep 10",
+            "description": "http://cut.com\n\nhttp://cut.com/licensing\n\nProduced, Directed, and Edited by Cut!\n\nDon't forget to follow us on social media\nFacebook: https://www.facebook.com/watchcut\nTwitter: https://www.twitter.com/watchcut\nInstagram: https://www.instagram.com/storiesbycut \n\n\nGet Cut swag here: \nhttp://bit.ly/BuyCut",
+            "thumbnails": {
+             "medium": {
+              "url": "https://i.ytimg.com/vi/-CZwFNh4utM/mqdefault.jpg",
+              "width": 320,
+              "height": 180
+             }
+            },
+            "categoryId": "24"
+           },
+           "contentDetails": {
+            "duration": "PT5M15S"
+           },
+           "statistics": {
+            "viewCount": "545107",
+            "likeCount": "22632",
+            "dislikeCount": "1012"
+           }
+          },
+          {
+           "id": "Yr2UDKEzAL8",
+           "snippet": {
+            "publishedAt": "2016-12-13T17:10:34.000Z",
+            "channelId": "UCYUQQgogVeQY8cMQamhHJcg",
+            "title": "Everything Wrong With Star Trek Beyond In 17 Minutes Or Less",
+            "description": "Star Trek Beyond, the third entry to this current series, is actually pretty fun, and was a bright spot in a horrible summer of movies. Still not perfect, so here are its sins. \n\nThursday: Another space movie.\n\nRemember, no movie is without sin! Which movie's sins should we expose next?!\n\nPodcast: http://soundcloud.com/cinemasins\nSins Video Playlist: http://www.youtube.com/watch?v=wy-v4c4is-w&list=PLMWfZxj1nTkQBy4AeRGG4xH5d2IIApNPj\nTweet us: http://twitter.com/cinemasins\nReddit with us: http://reddit.com/r/cinemasins\nTumble us: http://cinema-sins.tumblr.com\nCall us: 405-459-7466\nJeremy's book now available: http://theablesbook.com",
+            "thumbnails": {
+             "medium": {
+              "url": "https://i.ytimg.com/vi/Yr2UDKEzAL8/mqdefault.jpg",
+              "width": 320,
+              "height": 180
+             }
+            },
+            "categoryId": "1"
+           },
+           "contentDetails": {
+            "duration": "PT17M34S"
+           },
+           "statistics": {
+            "viewCount": "391717",
+            "likeCount": "16288",
+            "dislikeCount": "434"
+           }
+          },
+          {
+           "id": "ZO5OzmBFDOk",
+           "snippet": {
+            "publishedAt": "2016-12-13T15:45:06.000Z",
+            "channelId": "UCb0xfM3HGOsqPYNAocXXNAQ",
+            "title": "Adam Ruins Everything - The Truth About the McDonald's Coffee Lawsuit",
+            "description": "This famous lawsuit was terrible, but not for the reasons you might think.\n\nSubscribe: http://full.sc/1s9KQGe\nWatch Full Episodes for FREE: http://bit.ly/1Rw2yzp\nCheck Adam’s Sources: http://bit.ly/1Q7MHpK\n\nIn Adam Ruins Everything, host Adam Conover employs a combination of comedy, history and science to dispel widespread misconceptions about everything we take for granted. A blend of entertainment and enlightenment, Adam Ruins Everything is like that friend who knows a little bit too much about everything and is going to tell you about it... whether you like it or not. \n\ntruTV Official Site: http://www.trutv.com/\nLike truTV on Facebook:  https://www.facebook.com/truTV\nFollow truTV on Twitter: https://twitter.com/truTV\nFollow truTV on Tumblr: http://trutv.tumblr.com/\nGet the truTV app on Google Play: http://bit.ly/1eYxjPP\nGet the truTV app on iTunes: http://apple.co/1JiGkjh\n\nWay more truTV!  Watch clips, sneak peeks and exclusives from original shows like Comedy Knockout, Those Who Can't and more – plus fresh video from hit shows like Impractical Jokers and The Carbonaro Effect. \n\nAdam Ruins Everything - The Truth About the McDonald's Coffee Lawsuit",
+            "thumbnails": {
+             "medium": {
+              "url": "https://i.ytimg.com/vi/ZO5OzmBFDOk/mqdefault.jpg",
+              "width": 320,
+              "height": 180
+             }
+            },
+            "categoryId": "24"
+           },
+           "contentDetails": {
+            "duration": "PT2M58S"
+           },
+           "statistics": {
+            "viewCount": "493739",
+            "likeCount": "20629",
+            "dislikeCount": "707"
+           }
+          },
+          {
+           "id": "T5AdquDjiyE",
+           "snippet": {
+            "publishedAt": "2016-12-13T05:27:45.000Z",
+            "channelId": "UCa6vGFO9ty8v5KZJXQxdhaw",
+            "title": "Jennifer Lawrence Gets Her Revenge on Chris Pratt",
+            "description": "Chris Pratt has been cutting Jennifer Lawrence out of photos and posting them all over social media during their press tour for the movie Passengers. Jennifer finally gets her revenge with the help of Jimmy and Guillermo.\n\nKids Tell the Story of Christmas https://youtu.be/NkfcpAQ2IaQ\n\nSUBSCRIBE to get the latest #KIMMEL: http://bit.ly/JKLSubscribe\n\nWatch the latest Halloween Candy Prank: http://bit.ly/KimmelHalloweenCandy\n\nWatch Mean Tweets: http://bit.ly/JKLMeanTweets8\n\nConnect with Jimmy Kimmel Live Online:\n\nVisit the Jimmy Kimmel Live WEBSITE: http://bit.ly/JKLWebsite\nLike Jimmy Kimmel Live on FACEBOOK: http://bit.ly/JKLFacebook\nFollow Jimmy Kimmel Live on TWITTER: http://bit.ly/JKLTwitter\nFollow Jimmy Kimmel Live on INSTAGRAM: http://bit.ly/JKLInstagram\n\nAbout Jimmy Kimmel Live:\nJimmy Kimmel serves as host and executive producer of Emmy-winning \"Jimmy Kimmel Live,\" ABC's late-night talk show.\n \n\"Jimmy Kimmel Live\" is well known for its huge viral video successes with 2.5 billion views on YouTube alone. Some of Kimmel's mostpopular comedy bits include - Mean Tweets, Lie Witness News, Jimmy's Twerk Fail Prank, Unnecessary Censorship, YouTube Challenge, The Baby Bachelor, Movie: The Movie, Handsome Men's Club, Jimmy Kimmel Lie Detective and music videos like \"I (Wanna) Channing All Over Your Tatum\" and a Blurred Lines parody with Robin Thicke, Pharrell, Jimmy and his security guard Guillermo.\n \nNow in its thirteenth season, Kimmel's guests have included: Johnny Depp, Meryl Streep, Tom Cruise, Halle Berry, Harrison Ford, Jennifer Aniston, Will Ferrell, Katy Perry, Tom Hanks, Scarlett Johansson, Channing Tatum, George Clooney, Larry David, Charlize Theron, Mark Wahlberg, Kobe Bryant, Steve Carell, Hugh Jackman, Kristen Wiig, Jeff Bridges, Jennifer Garner, Ryan Gosling, Bryan Cranston, Jamie Foxx, Amy Poehler, Ben Affleck, Robert Downey Jr., Jake Gyllenhaal, Oprah, and unfortunately Matt Damon.\n\nJennifer Lawrence Gets Her Revenge on Chris Pratt\nhttps://youtu.be/T5AdquDjiyE",
+            "thumbnails": {
+             "medium": {
+              "url": "https://i.ytimg.com/vi/T5AdquDjiyE/mqdefault.jpg",
+              "width": 320,
+              "height": 180
+             }
+            },
+            "categoryId": "23"
+           },
+           "contentDetails": {
+            "duration": "PT4M42S"
+           },
+           "statistics": {
+            "viewCount": "2270217",
+            "likeCount": "27770",
+            "dislikeCount": "2035"
+           }
+          },
+          {
+           "id": "olP8JIQYLFw",
+           "snippet": {
+            "publishedAt": "2016-12-13T18:00:06.000Z",
+            "channelId": "UCXhSCMRRPyxSoyLSPFxK7VA",
+            "title": "50 AMAZING Facts to Blow Your Mind! #56",
+            "description": "Check out ScreenRant, and subscribe! https://www.youtube.com/playlist?list=PL--PgETgAz5EST8IApKy1PrgjqsPdW6S-\n50 of the most AMAZING facts you'll ever see!\nSubscribe and click the bell to enable notifications for my new videos! https://www.youtube.com/matthewsantoro?sub_confirmation=1\nFollow me for more DAILY facts and important updates!\nSnapchat: http://bit.ly/SantoroSnapchat\nTwitter: http://twitter.com/MatthewSantoro\nInstagram: http://instagr.am/MatthewSantoro\nFacebook Profile: http://fb.com/MatthewMSantoro\nFacebook Page: http://fb.com/MatthewSantoroOfficial\n\nGet my book MIND = BLOWN here! http://matthewsantoro.squarespace.com/\n\nSubscribe to my second channel! https://www.youtube.com/matthewsantoro2?sub_confirmation=1\n\nSources:\nAll facts in this video are sourced from the following websites, and then individually researched to ensure veracity. I encourage you to visit these websites if you want to learn more!\nhttp://omgfacts.com\nhttp://thefactsite.com\nhttp://factslides.com\nhttp://wtffunfact.com\nhttp://todayifoundout.com\nhttps://reddit.com/r/todayilearned",
+            "thumbnails": {
+             "medium": {
+              "url": "https://i.ytimg.com/vi/olP8JIQYLFw/mqdefault.jpg",
+              "width": 320,
+              "height": 180
+             }
+            },
+            "categoryId": "27"
+           },
+           "contentDetails": {
+            "duration": "PT8M52S"
+           },
+           "statistics": {
+            "viewCount": "353602",
+            "likeCount": "20836",
+            "dislikeCount": "648"
+           }
+          },
+          {
+           "id": "J_8xCOSekog",
+           "snippet": {
+            "publishedAt": "2016-12-13T02:05:35.000Z",
+            "channelId": "UC3SEvBYhullC-aaEmbEQflg",
+            "title": "Mac Miller - My Favorite Part (feat. Ariana Grande)",
+            "description": "From The Divine Feminine, available on iTunes & Spotify now: https://smarturl.it/MM.TDF\n\nDirected by _p\n\nCONNECT WITH MAC MILLER \nTwitter: https://twitter.com/macmiller \nFacebook: https://facebook.com/macmiller \nInstagram: https://instagram.com/larryfisherman \nSoundcloud: https://soundcloud.com/larryfisherman",
+            "thumbnails": {
+             "medium": {
+              "url": "https://i.ytimg.com/vi/J_8xCOSekog/mqdefault.jpg",
+              "width": 320,
+              "height": 180
+             }
+            },
+            "categoryId": "10"
+           },
+           "contentDetails": {
+            "duration": "PT4M35S"
+           },
+           "statistics": {
+            "viewCount": "2216324",
+            "likeCount": "110665",
+            "dislikeCount": "9527"
+           }
+          },
+          {
+           "id": "omoM8Xypiwk",
+           "snippet": {
+            "publishedAt": "2016-12-13T13:00:04.000Z",
+            "channelId": "UCtinbF-Q-fVthA0qrFQTgXQ",
+            "title": "about my HOLIDAY MOVIE..",
+            "description": "go check out the 4d VR thing Samsung is doing at the Grove.  it's free and rad and they're awesome for doing this holiday video with me - https://news.samsung.com/us/2016/12/08/samsung-spreads-holiday-cheer-with-launch-of-the-night-before-gear-vr-837nyc/\n\nJesse's vid https://www.youtube.com/watch?v=S1lkGOuIZzY\n\nmusic by https://soundcloud.com/panthurr",
+            "thumbnails": {
+             "medium": {
+              "url": "https://i.ytimg.com/vi/omoM8Xypiwk/mqdefault.jpg",
+              "width": 320,
+              "height": 180
+             }
+            },
+            "categoryId": "22"
+           },
+           "contentDetails": {
+            "duration": "PT9M19S"
+           },
+           "statistics": {
+            "viewCount": "1177944",
+            "likeCount": "72306",
+            "dislikeCount": "4030"
+           }
+          },
+          {
+           "id": "yJKBQNqqmsw",
+           "snippet": {
+            "publishedAt": "2016-12-14T03:11:37.000Z",
+            "channelId": "UCHqC-yWZ1kri4YzwRSt6RGQ",
+            "title": "LIVE Stream: President-Elect Donald Trump Rally in West Allis, WI 12/13/16",
+            "description": "Tuesday, December 13, 2016: Join President-Elect Donald J. Trump and Vice President-Elect Mike Pence for the USA Thank You Tour 2016 at the Wisconsin State Fair Exposition Center at 7:00 PM CT.\n\nLIVE Stream: President-Elect Donald Trump Rally in West Allis, WI 12/13/16",
+            "thumbnails": {
+             "medium": {
+              "url": "https://i.ytimg.com/vi/yJKBQNqqmsw/mqdefault.jpg",
+              "width": 320,
+              "height": 180
+             }
+            },
+            "categoryId": "25"
+           },
+           "contentDetails": {
+            "duration": "PT3H38M55S"
+           },
+           "statistics": {
+            "viewCount": "48836",
+            "likeCount": "4370",
+            "dislikeCount": "199"
+           }
+          },
+          {
+           "id": "M9ctBliiq1A",
+           "snippet": {
+            "publishedAt": "2016-12-12T18:33:26.000Z",
+            "channelId": "UCA698bls2pjQyiqP9N-iaeg",
+            "title": "More Pokémon are here!",
+            "description": "Professor Willow has discovered Togepi and Pichu hatching from Eggs! Starting later today, Trainers will have the opportunity to hatch these and several other Pokémon that were originally discovered in the Johto Region in Pokémon Gold and Pokémon Silver video games. These are the first of more Pokémon coming to Pokémon GO over the next few months.",
+            "thumbnails": {
+             "medium": {
+              "url": "https://i.ytimg.com/vi/M9ctBliiq1A/mqdefault.jpg",
+              "width": 320,
+              "height": 180
+             }
+            },
+            "categoryId": "20"
+           },
+           "contentDetails": {
+            "duration": "PT29S"
+           },
+           "statistics": {
+            "viewCount": "2946463",
+            "likeCount": "24376",
+            "dislikeCount": "14894"
+           }
+          },
+          {
+           "id": "2WsbkZC360U",
+           "snippet": {
+            "publishedAt": "2016-12-13T03:00:00.000Z",
+            "channelId": "UCSOiCD_QJnfDU-jlBDaPxfQ",
+            "title": "$3 Sundae Vs. $154 Sundae",
+            "description": "Become a Parodian - http://bit.ly/DavidParody\nCHEAP SUNDAE VS LUXURY SUNDAE TASTE TEST!!!\n\nMAILTIME w/ BigDickDave:\n\nDavid Parody\nPO Box 59081 ALTA VISTA \nOTTAWA ON\nK1G 5T7 \n______________________________\n\nSnapchat\ndavidparody\n\nTwitter\nhttp://twitter.com/DavidParody \n\nInstagram\nhttp://instagram.com/Davidparody\n\nContact Email\nbizdevdavidparody@live.com",
+            "thumbnails": {
+             "medium": {
+              "url": "https://i.ytimg.com/vi/2WsbkZC360U/mqdefault.jpg",
+              "width": 320,
+              "height": 180
+             }
+            },
+            "categoryId": "23"
+           },
+           "contentDetails": {
+            "duration": "PT13M4S"
+           },
+           "statistics": {
+            "viewCount": "1138599",
+            "likeCount": "73731",
+            "dislikeCount": "7520"
+           }
+          },
+          {
+           "id": "8pg1obK0Qfo",
+           "snippet": {
+            "publishedAt": "2016-12-13T18:00:00.000Z",
+            "channelId": "UCOpcACMWblDls9Z6GERVi1A",
+            "title": "Honest Trailers - Star Wars: Episode V - The Empire Strikes Back",
+            "description": "Get ready for a sequel so good, its title is used to describe other good sequels - The Empire Strikes Back!\n\nDon't forget to sign up for ScreenJunkies Plus to see the Roast of Darth Vader  ►► http://sj.plus/ESB_Roast\n\nGot a tip? Email us ► feedback@screenjunkies.com\nFollow us on Twitter ► http://twitter.com/screenjunkies\nLike us on Facebook ► http://www.fb.com/screenjunkies\nGet Screen Junkies Gear! ►► http://bit.ly/SJMerch\nDownload our iPhone App! ►► http://bit.ly/SJAppPlus\nDownload our Android App! ►►http://bit.ly/SJPlusGoogleApp\n\nVoiceover Narration by Jon Bailey: http://youtube.com/jon3pnt0\nTitle design by Robert Holtby \n\nSeries Created by Andy Signore -  http://twitter.com/andysignore & Brett Weiner\nWritten by Spencer Gilbert, Joe Starr, Dan Murrell & Andy Signore\nEdited by Bruce Guido and TJ Nordaker.\n\nAlso while we have you, why not check out our Emmy-Nominated HONEST TRAILERS!\n\nDeadpool (Feat. Deadpool)\nhttp://bit.ly/HT_Deadpool\n\nGame of Thrones Vol. 1\nhttp://bit.ly/HT_GOTv1\n\nFrozen \nhttp://bit.ly/HT_Frozen\n\nHarry Potter \nhttp://bit.ly/HT_HarryPotter\n\nBreaking Bad \nhttp://bit.ly/HT_BreakingBad\n\nThe Lord Of The Rings\nhttp://bit.ly/HT_LordOfTheRings\n\nStar Wars Force Awakens \nhttp://bit.ly/HT_ForceAwakens\n\nBatman v Superman: Dawn of Justice \nhttp://bit.ly/HT_BvS",
+            "thumbnails": {
+             "medium": {
+              "url": "https://i.ytimg.com/vi/8pg1obK0Qfo/mqdefault.jpg",
+              "width": 320,
+              "height": 180
+             }
+            },
+            "categoryId": "1"
+           },
+           "contentDetails": {
+            "duration": "PT6M5S"
+           },
+           "statistics": {
+            "viewCount": "770086",
+            "likeCount": "38455",
+            "dislikeCount": "782"
+           }
+          },
+          {
+           "id": "N5AIDgzDuws",
+           "snippet": {
+            "publishedAt": "2016-12-14T08:35:00.000Z",
+            "channelId": "UCMtFAi84ehTSYSE9XoHefig",
+            "title": "Trump And Kanye Meet To Discuss New Collaboration",
+            "description": "We're told the two will be dropping a new album together, it's called 'The Deportation of Pablo.'\n\nSubscribe To \"The Late Show\" Channel HERE: http://bit.ly/ColbertYouTube\nFor more content from \"The Late Show with Stephen Colbert\", click HERE: http://bit.ly/1AKISnR\nWatch full episodes of \"The Late Show\" HERE: http://bit.ly/1Puei40\nLike \"The Late Show\" on Facebook HERE: http://on.fb.me/1df139Y\nFollow \"The Late Show\" on Twitter HERE: http://bit.ly/1dMzZzG\nFollow \"The Late Show\" on Google+ HERE: http://bit.ly/1JlGgzw\nFollow \"The Late Show\" on Instagram HERE: http://bit.ly/29wfREj\nFollow \"The Late Show\" on Tumblr HERE: http://bit.ly/29DVvtR\n\nWatch The Late Show with Stephen Colbert weeknights at 11:35 PM ET/10:35 PM CT. Only on CBS.\n\nGet the CBS app for iPhone & iPad! Click HERE: http://bit.ly/12rLxge\n\nGet new episodes of shows you love across devices the next day, stream live TV, and watch full seasons of CBS fan favorites anytime, anywhere with CBS All Access. Try it free! http://bit.ly/1OQA29B\n\n---\nThe Late Show with Stephen Colbert is the premier late night talk show on CBS, airing at 11:35pm EST, streaming online via CBS All Access, and delivered to the International Space Station on a USB drive taped to a weather balloon. Every night, viewers can expect: Comedy, humor, funny moments, witty interviews, celebrities, famous people, movie stars, bits, humorous celebrities doing bits, funny celebs, big group photos of every star from Hollywood, even the reclusive ones, plus also jokes.",
+            "thumbnails": {
+             "medium": {
+              "url": "https://i.ytimg.com/vi/N5AIDgzDuws/mqdefault.jpg",
+              "width": 320,
+              "height": 180
+             }
+            },
+            "categoryId": "24"
+           },
+           "contentDetails": {
+            "duration": "PT12M29S"
+           },
+           "statistics": {
+            "viewCount": "47376",
+            "likeCount": "6140",
+            "dislikeCount": "349"
+           }
+          },
+          {
+           "id": "CH7GCMm1ngA",
+           "snippet": {
+            "publishedAt": "2016-12-13T07:02:06.000Z",
+            "channelId": "UC18vz5hUUqxbGvym9ghtX_w",
+            "title": "Democrats in the Wilderness | Full Frontal with Samantha Bee | TBS",
+            "description": "Democrats might feel lost in the woods, but they're ignoring an obvious trail of breadcrumbs.\n\nWatch Full Frontal with Samantha Bee all new Mondays at 10:30/ 9:30c on TBS!",
+            "thumbnails": {
+             "medium": {
+              "url": "https://i.ytimg.com/vi/CH7GCMm1ngA/mqdefault.jpg",
+              "width": 320,
+              "height": 180
+             }
+            },
+            "categoryId": "22"
+           },
+           "contentDetails": {
+            "duration": "PT5M44S"
+           },
+           "statistics": {
+            "viewCount": "379189",
+            "likeCount": "5419",
+            "dislikeCount": "3433"
+           }
+          },
+          {
+           "id": "Qcsf5OoI-B4",
+           "snippet": {
+            "publishedAt": "2016-12-13T15:22:54.000Z",
+            "channelId": "UCupvZG-5ko_eiXAupbDfxWw",
+            "title": "Kanye West meets Donald Trump",
+            "description": "Kanye West arrives at Trump Tower in New York to meet with President-elect Trump, two weeks after being released from the hospital in Los Angeles.",
+            "thumbnails": {
+             "medium": {
+              "url": "https://i.ytimg.com/vi/Qcsf5OoI-B4/mqdefault.jpg",
+              "width": 320,
+              "height": 180
+             }
+            },
+            "categoryId": "25"
+           },
+           "contentDetails": {
+            "duration": "PT58S"
+           },
+           "statistics": {
+            "viewCount": "73782",
+            "likeCount": "2128",
+            "dislikeCount": "806"
+           }
+          },
+          {
+           "id": "ubf_sukX0nY",
+           "snippet": {
+            "publishedAt": "2016-12-13T17:00:07.000Z",
+            "channelId": "UC7v3-2K1N84V67IF-WTRG-Q",
+            "title": "Rogue One: A Star Wars Story - Movie Review",
+            "description": "The events encapsulated in the opening crawl to \"Star Wars: A New Hope\" come to life! Here's my review of \"Rogue One: A Star Wars Story\"!\n\nSee more videos by Jeremy here: http://www.youtube.com/user/JeremyJahns\n\nFollow Jeremy on Twitter: https://twitter.com/JeremyJahns\n\nFriend Jeremy on Facebook: http://www.facebook.com/RealJeremyJahns",
+            "thumbnails": {
+             "medium": {
+              "url": "https://i.ytimg.com/vi/ubf_sukX0nY/mqdefault.jpg",
+              "width": 320,
+              "height": 180
+             }
+            },
+            "categoryId": "24"
+           },
+           "contentDetails": {
+            "duration": "PT5M46S"
+           },
+           "statistics": {
+            "viewCount": "241305",
+            "likeCount": "17492",
+            "dislikeCount": "489"
+           }
+          },
+          {
+           "id": "InlJXXsjhs0",
+           "snippet": {
+            "publishedAt": "2016-12-12T14:04:05.000Z",
+            "channelId": "UCSvEDnrTiObRy1xbY2b6x0w",
+            "title": "RenesPoints.com - Woman dragged off a Delta jet in DTW Detroit",
+            "description": "See RenesPoints.com post for updates LINK➤  http://renespoints.boardingarea.com/",
+            "thumbnails": {
+             "medium": {
+              "url": "https://i.ytimg.com/vi/InlJXXsjhs0/mqdefault.jpg",
+              "width": 320,
+              "height": 180
+             }
+            },
+            "categoryId": "19"
+           },
+           "contentDetails": {
+            "duration": "PT2M3S"
+           },
+           "statistics": {
+            "viewCount": "574186",
+            "likeCount": "912",
+            "dislikeCount": "168"
+           }
+          },
+          {
+           "id": "YIQMBLahtqY",
+           "snippet": {
+            "publishedAt": "2016-12-14T05:58:34.000Z",
+            "channelId": "UCVTyTA7-g9nopHeHbeuvpRA",
+            "title": "Trump's Cabinet of Plutocrats and Hardliners: A Closer Look",
+            "description": "Seth takes a closer look at President-elect Donald Trump continuing to fill his cabinet with wealthy elites and hardliners.\n» Subscribe to Late Night: http://bit.ly/LateNightSeth\n» Get more Late Night with Seth Meyers: http://www.nbc.com/late-night-with-seth-meyers/\n» Watch Late Night with Seth Meyers Weeknights 12:35/11:35c on NBC.\n\nLATE NIGHT ON SOCIAL\nFollow Late Night on Twitter: https://twitter.com/LateNightSeth\nLike Late Night on Facebook: https://www.facebook.com/LateNightSeth\nFind Late Night on Tumblr: http://latenightseth.tumblr.com/\nConnect with Late Night on Google+: https://plus.google.com/+LateNightSeth/videos\n\nLate Night with Seth Meyers on YouTube features A-list celebrity guests, memorable comedy, and topical monologue jokes.\n\nNBC ON SOCIAL \nLike NBC: http://Facebook.com/NBC\nFollow NBC: http://Twitter.com/NBC\nNBC Tumblr: http://NBCtv.tumblr.com/\nNBC Pinterest: http://Pinterest.com/NBCtv/\nNBC Google+: https://plus.google.com/+NBC\nYouTube: http://www.youtube.com/nbc\nNBC Instagram: http://instagram.com/nbctv\n\nTrump's Cabinet of Plutocrats and Hardliners: A Closer Look- Late Night with Seth Meyers\nhttps://youtu.be/YIQMBLahtqY\n\n\nLate Night with Seth Meyers\nhttp://www.youtube.com/user/latenightseth",
+            "thumbnails": {
+             "medium": {
+              "url": "https://i.ytimg.com/vi/YIQMBLahtqY/mqdefault.jpg",
+              "width": 320,
+              "height": 180
+             }
+            },
+            "categoryId": "23"
+           },
+           "contentDetails": {
+            "duration": "PT8M52S"
+           },
+           "statistics": {
+            "viewCount": "38871",
+            "likeCount": "6343",
+            "dislikeCount": "242"
+           }
+          },
+          {
+           "id": "Dzw16brPBSA",
+           "snippet": {
+            "publishedAt": "2016-12-13T14:00:02.000Z",
+            "channelId": "UC6E2mP01ZLH_kbAyeazCNdg",
+            "title": "Poison Frogs in Our Backyard!",
+            "description": "Please SUBSCRIBE - http://bit.ly/BWchannel\nWatch More - http://bit.ly/BTpoisonfrog\n\nIn this segment of On Location, Coyote and the crew are back in Costa Rica and they have Poison Frogs in their backyard!\n\nTheir backyard also happens to be some of the most pristine rainforest in Eastern Costa Rica and is home to many exotic species of amphibians and reptiles…so the fact that it’s full of Poison Frogs is actually to be expected! \n\nSince this little Strawberry Poison Frog is just the first discovery of the trip Coyote wants to know what animals you would like the team to get in front of the cameras? Please tell us in the comments section below.\n\nGet ready because more amazing Costa Rican adventures are just around the corner! \n\n\nHUGE THANKS to Brian Kubicki for hosting the crew at this location! To visit his amazing amphibian reserve check out his website for details - http://bit.ly/crfrogs\n\nThank you for joining us On Location! In these segments you will get a behind the scenes look at all of the fun and exciting things Coyote and team experience on their adventures when they’re NOT encountering wildlife…or at least not by choice!  \n\nThe Brave Wilderness Channel is your one stop connection to a wild world of adventure and amazing up close animal encounters! \n\nFollow along with adventurer and animal expert Coyote Peterson and his crew as they lead you on three exciting expedition series - Breaking Trail, Dragon Tails and Coyote’s Backyard - featuring everything from Grizzly Bears and Crocodiles to Rattlesnakes and Tarantulas…each episode offers an opportunity to learn something new.\n      \nSo SUBSCRIBE NOW and join the adventure that brings you closer to the most beloved, bizarre and misunderstood creatures known to man! \n\nGET READY...things are about to get WILD!   \nNew Episodes Every Tuesday at 9AM EST!\n\nSubscribe Now! https://www.youtube.com/BraveWilderness\n\nFind more info at: https://www.CoyotePeterson.com\n\nCoyote Peterson on Twitter: https://twitter.com/CoyotePeterson\n\nCoyote Peterson on Facebook: https://www.facebook.com/CoyotePeterson\n\nCoyote Peterson on Instagram: https://www.instagram.com/CoyotePeterson\n\nCoyote Peterson G+: https://plus.google.com/100310803754690323805/about",
+            "thumbnails": {
+             "medium": {
+              "url": "https://i.ytimg.com/vi/Dzw16brPBSA/mqdefault.jpg",
+              "width": 320,
+              "height": 180
+             }
+            },
+            "categoryId": "15"
+           },
+           "contentDetails": {
+            "duration": "PT3M47S"
+           },
+           "statistics": {
+            "viewCount": "429611",
+            "likeCount": "25211",
+            "dislikeCount": "164"
+           }
+          },
+          {
+           "id": "QeowNXMn10g",
+           "snippet": {
+            "publishedAt": "2016-12-13T02:35:25.000Z",
+            "channelId": "UC64UiPJwM_e9AqAd7RiD7JA",
+            "title": "What's Actually Supposed to Happen When You Land on Free Parking",
+            "description": "→Subscribe for new videos every day! \nhttps://www.youtube.com/user/TodayIFoundOut?sub_confirmation=1\n→How \"Dick\" came to be short for 'Richard': https://youtu.be/BH1NAwwKtcg?list=PLR0XuDegDqP2Acy6g9Ta7hzC0Rr3RDS6q\n\nNever run out of things to say at the water cooler with TodayIFoundOut! Brand new videos 7 days a week!\n\nMore from TodayIFoundOut\n\nHow Much Land do You Really Own Above and Below Your Property?\nhttps://youtu.be/7F9V6yZjJXQ?list=PLR0XuDegDqP0GESJ0DgpgTcThLJVEbFs8\n\nWhat Happens if a Cemetery Goes Under?\nhttps://youtu.be/LwhFDJYDQTk?list=PLR0XuDegDqP0GESJ0DgpgTcThLJVEbFs8\n\nIn this video:\n\nFew board games have the ability to cause arguments like Monopoly, an unsurprising fact given the object of the game it was based on (see: Who Invented Monopoly?) was to send your opponent to the poor house while you bask in the pleasures of immense wealth and prosperity. In the eight decades or so the game has existed, the rules of Monopoly haven’t really changed all that much, but because everyone “knows” how to play, how people actually play the game has slowly diverged from what the actual rule book, which nobody ever bothers to read, says. In anticipation of various family get-togethers coming up this holiday season, in which you’ll no doubt be subjected to a game of Monopoly at some point, in this article, we’re going to correct the various ways you’ve probably been playing Monopoly wrong your whole life.\n\nWant the text version?: http://www.todayifoundout.com/index.php/2016/11/exactly-landing-free-parking-game-monopoly/\n\nSources:\n\nhttp://www.hasbro.com/common/instruct/monins.pdf\nhttp://www.wired.co.uk/article/how-to-beat-anyone-at-jenga\nhttp://www.word-buff.com/scrabble-rules.html\nhttp://www.criticalmiss.com/issue10/CampaignRealMonopoly1.html\nhttps://en.wikipedia.org/wiki/Monopoly_(game)\nhttp://www.dailymail.co.uk/femail/article-2596909/Hasbro-picks-5-house-rules-new-Monopoly-set.html\nhttp://investor.hasbro.com/releasedetail.cfm?releaseid=835277\nhttp://richard_wilding.tripod.com/monorules.htm\nhttps://en.wikipedia.org/wiki/Connect_Four\nhttps://www.buzzfeed.com/monopoly/things-you-probably-didnt-know-about-monopoly?utm_term=.jtKZn4oR1#.npVBzQno5",
+            "thumbnails": {
+             "medium": {
+              "url": "https://i.ytimg.com/vi/QeowNXMn10g/mqdefault.jpg",
+              "width": 320,
+              "height": 180
+             }
+            },
+            "categoryId": "27"
+           },
+           "contentDetails": {
+            "duration": "PT8M23S"
+           },
+           "statistics": {
+            "viewCount": "499414",
+            "likeCount": "15975",
+            "dislikeCount": "992"
+           }
+          },
+          {
+           "id": "vr3iIr9y4xc",
+           "snippet": {
+            "publishedAt": "2016-12-14T05:10:37.000Z",
+            "channelId": "UCpdK1NLHxEUGXc1gq2NxkTw",
+            "title": "The Voice 2016 Billy Gilman and Kelly Clarkson - Finale: \"It's Quiet Uptown\"",
+            "description": "Billy Gilman teams up with Kelly Clarkson for a duet of \"It's Quiet Uptown,\" from The Hamilton Mixtape.\n» Get The Voice Official App: http://bit.ly/TheVoiceOfficialApp\n» Subscribe for More: http://bit.ly/TheVoiceSub\n» The Voice Returns Monday February 27 8/7c on NBC!\n» Watch Full Episodes: http://bit.ly/TheVoiceFullEpisodes\n\nTHE VOICE ON SOCIAL:\nLike The Voice: http://Facebook.com/NBCTheVoice\nFollow The Voice: https://Twitter.com/NBCTheVoice\nThe Voice Tumblr: http://nbcTheVoice.Tumblr.com/\nGoogle+: https://plus.google.com/+TheVoice/\nThe Voice Pinterest: http://Pinterest.com/nbcTheVoice/\n\nNBC’s The Voice follows the strongest vocalists from across the country and invites them to compete in this season's blockbuster vocal competition.\n\nFind The Voice trailers, full episode highlights, previews, promos, clips, and digital exclusives here.\n\nNBC ON SOCIAL:\nNBC YouTube: http://www.youtube.com/nbc\nLike NBC: http://Facebook.com/NBC\nFollow NBC: http://Twitter.com/NBC\nNBC Tumblr: http://nbctv.tumblr.com/\nNBC Google+: https://plus.google.com/+NBC/posts\n\nABOUT THE VOICE\nThe Voice 2016 USA YouTube channel features exclusive content with The Voice coaches, highlights from The Voice auditions, interviews with The Voice winners, as well as The Voice recaps and results. Learn more about The Voice contestants, The Voice tour, the eliminations, and follow your favorite performers all the way to the finale. In season 11, internationally acclaimed artists Miley Cyrus and Alicia Keys join Adam Levine and Blake Shelton as celebrity musician coaches, while Carson Daly continues to serve as host. The show's innovative format features five stages of competition: the first begins with the blind auditions, followed by the battle rounds, the knockouts, the live playoffs and finally, the live performance shows.\n\nThe Voice 2016 Billy Gilman and Kelly Clarkson - Finale: \"It's Quiet Uptown\"\nhttps://youtu.be/vr3iIr9y4xc\n\nThe Voice\nhttp://www.youtube.com/user/nbcthevoice",
+            "thumbnails": {
+             "medium": {
+              "url": "https://i.ytimg.com/vi/vr3iIr9y4xc/mqdefault.jpg",
+              "width": 320,
+              "height": 180
+             }
+            },
+            "categoryId": "24"
+           },
+           "contentDetails": {
+            "duration": "PT3M38S"
+           },
+           "statistics": {
+            "viewCount": "24477",
+            "likeCount": "2718",
+            "dislikeCount": "38"
+           }
+          },
+          {
+           "id": "DvHJtez2IlY",
+           "snippet": {
+            "publishedAt": "2016-12-12T18:00:00.000Z",
+            "channelId": "UCWOA1ZGywLbqmigxE4Qlvuw",
+            "title": "The OA | Official Trailer [HD] | Netflix",
+            "description": "Trust the unknown. Netflix Original Series 'The OA' launches globally Friday, December 16.\n\ninstagram.com/the_OA\n\nFrom Brit Marling and Zal Batmanglij, the visionary filmmakers behind Sound of My Voice and The East, comes a powerful, mind-bending tale about identity, human connection and the borders between life and death. The Netflix original series The OA is an odyssey in eight chapters produced in partnership with Plan B Entertainment, Netflix and Anonymous Content. The groundbreaking series offers audiences a singular experience that upends notions about what long-format stories can be.\n\nSUBSCRIBE: http://bit.ly/29qBUt7\n\nAbout Netflix:\nNetflix is the world’s leading Internet television network with over 83 million members in over 190 countries enjoying more than 125 million hours of TV shows and movies per day, including original series, documentaries and feature films. Members can watch as much as they want, anytime, anywhere, on nearly any Internet-connected screen. Members can play, pause and resume watching, all without commercials or commitments.\n\nConnect with Netflix Online:\nVisit Netflix WEBSITE: http://nflx.it/29BcWb5\nLike Netflix on FACEBOOK: http://bit.ly/29kkAtN\nFollow Netflix on TWITTER: http://bit.ly/29gswqd\nFollow Netflix on INSTAGRAM: http://bit.ly/29oO4UP\nFollow Netflix on TUMBLR: http://bit.ly/29kkemT\n\nThe OA | Official Trailer [HD] | Netflix\nhttp://youtube.com/netflix",
+            "thumbnails": {
+             "medium": {
+              "url": "https://i.ytimg.com/vi/DvHJtez2IlY/mqdefault.jpg",
+              "width": 320,
+              "height": 180
+             }
+            },
+            "categoryId": "24"
+           },
+           "contentDetails": {
+            "duration": "PT1M41S"
+           },
+           "statistics": {
+            "viewCount": "957531",
+            "likeCount": "6051",
+            "dislikeCount": "348"
+           }
+          },
+          {
+           "id": "6c8GlSb6XlA",
+           "snippet": {
+            "publishedAt": "2016-12-12T23:15:43.000Z",
+            "channelId": "UCTFuNYrqAcsmSjgqYMvxOqw",
+            "title": "Grandma Got Runover By A Reindeer - Home Free",
+            "description": "► This song is on our album FULL OF (EVEN MORE) CHEER... autographed copies: http://flyt.it/hf_foc_walmart?ID=yt\n► iTUNES: http://flyt.it/hf_foc?ID=yt\n► All Our Songs Are Made WithOUT Instruments, SUBSCRIBE: http://flyt.it/HFYoutube?ID=yt\n\n► Autographed Int'l Copies on our store: http://flyt.it/hf_foc_store?ID=yt\n\n► Keep In Touch, Dang It! Newsletter: http://flyt.it/HFNewsletter?ID=youtube\n► AMAZON: http://flyt.it/hf_focamazon?ID=yt\n► GOOGLE PLAY: http://flyt.it/hf_focgoogle?ID=yt\n\nHome Free's Socials\nNewsletter - Get News First!: http://flyt.it/HFNewsletter?ID=youtube\nYouTube (SUBSCRIBE!): http://flyt.it/HFYoutube?ID=youtube\nSpotify (FOLLOW): http://flyt.it/HFSpotify?ID=youtube\nFacebook: http://www.facebook.com/homefreevocalband\nTwitter: http://www.twitter.com/homefreeguys\nInstagram: http://www.instagram.com/homefreeguys\n\nCOUNTRY EVOLUTION is available too!\niTunes: http://flyt.it/HFCountryEvolution?ID=youtube\nPhysical Copies In Our Store:http://flyt.it/HFWebsiteStore?ID=youtube\n\nOur first album, CRAZY LIFE, is available too:\niTunes: http://flyt.it/HFCrazyLifeiTunes?ID=youtube\nAmazon: http://flyt.it/HFCrazyLifeAmazon?ID=youtube\n\n--\n\nDirected, filmed, edited by Reilly Zamber, McKenzie Zamber, and Jimmy Bates for FifGen Films (fifgenfilms@gmail.com)\n\nPlease consider supporting us on Patreon: http://flyt.it/HFPatreon?ID=youtube\n\nThis was made possible with the generous support of:\n\nElizabeth L, Nanette W, Iris H, Marvetta h, Candi O, Georgene K, Teresa L, Matthew M, Linda H, Janice B, Genevra L, Cindy M, Carole L, Carol A, Delaine M, Mary D F, Michelle B, Kimberly P, Mark W, Janet S, Wilma D, Linya, Heather J, Lisa W, Sally J, Brandy P, Yvonne L, Jane C, Heidi A, Susan Z, Danute P, Beverly B, Lynh T, Annamarie M, Steve Sherry and Greg D, Beth B, R. D, Rosalie C, Wagner M,  Michael H, Catharine B, Marcia G, Tina T, Katie W, Uta V, Kathryn & Angela W, Joann S, Sarah J, Ronald P, Jonathan S, Mary Lynn F, Rhonda s, Jenna, Megan P, Francesca H, Tressi D, Carolyn S, Vicki S, Carolyn E, Jim M, Marianna A, Katrina k, Mandy S, Ingrid H, Karyne, Rebeca & Trystinna B, Beth W, Terry R, Alicia V, Callene D, Cindy, Melanie A, Mika A, Daniel L, Carol F, Dana M, Paula M, Heather M, Melanie S, Kathleen R, Randie L M, Marjorie B, Steve and Marilyn C, Sheryl B, Janet B, Jennifer N, Christy K, Linda W, Brenda S, Kim S, Heather S, Tina K, Ramona V, Jen B, Shelly G, Kathy S, Katye M, JoAnn W\n\nWe’re going on tour! \n\nHOME FREE - ALL UPCOMING TOUR DATES\nNever miss a tour date...\nTrack us on Bandsintown: http://flyt.it/HFBandsinTown?ID=youtube\n\nDECEMBER 2016\n13 | Davenport, IA - FEW TICKETS REMAIN\n15 | Carmel, IN\n16 | Madison, WI - FEW TICKETS REMAIN\n17 | Brookings, SD\n18 | Mankato, MN - FEW TICKETS REMAIN\n20 | Eau Claire, WI - SOLD OUT\n21 | Minneapolis, MN  - FEW TICKETS REMAIN\n22 | Fargo, ND - FEW TICKETS REMAIN\n\nMARCH 2017\n23 | Wasau, WI  - FEW TICKETS REMAIN\n24 | Aurora, IL\n25 | Terre Haute, IN - SOLD OUT\n\nAPRIL 2017\n06 | Burlington, ON\n07 | Bethesda, MD\n26 | Moncton, NB\n27 | Fredericton, NB",
+            "thumbnails": {
+             "medium": {
+              "url": "https://i.ytimg.com/vi/6c8GlSb6XlA/mqdefault.jpg",
+              "width": 320,
+              "height": 180
+             }
+            },
+            "categoryId": "10"
+           },
+           "contentDetails": {
+            "duration": "PT5M25S"
+           },
+           "statistics": {
+            "viewCount": "200991",
+            "likeCount": "7134",
+            "dislikeCount": "115"
+           }
+          }
+         ]
+        }
+    http_version: 
+  recorded_at: Wed, 14 Dec 2016 18:50:19 GMT
 recorded_with: VCR 3.0.3
