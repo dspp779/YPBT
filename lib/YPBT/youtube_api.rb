@@ -32,7 +32,7 @@ module YoutubeVideo
                                           part:   'snippet,statistics,
                                                     contentDetails',
                                           fields: field })
-      JSON.parse(video_response.to_s)['items'].first
+      JSON.parse(video_response.to_s)['items']&.first
     end
 
     def self.popular_videos_info(max_results = 25)
